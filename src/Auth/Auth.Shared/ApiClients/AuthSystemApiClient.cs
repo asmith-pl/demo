@@ -1,0 +1,40 @@
+using PeakLogix.LogixPro.Common.Shared.Contracts;
+using PeakLogix.LogixPro.Common.Shared.DTOs;
+using System.Net.Http.Json;
+
+namespace PeakLogix.LogixPro.Auth.Shared.ApiClients;
+
+public class AuthSystemApiClient : ISystemService
+{
+    public const string cUrlPathRoot = $"api/auth/system";
+
+    private readonly HttpClient _httpClient;
+
+    public AuthSystemApiClient(HttpClient httpClient)
+    {
+        _httpClient = httpClient;
+    }
+
+    public async Task<string> Ping()
+    {
+        var response = await _httpClient.GetAsync($"{cUrlPathRoot}/ping");
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadAsStringAsync();
+    }
+
+    public async Task<HealthStatus> Health()
+    {
+        var response = await _httpClient.GetAsync($"{cUrlPathRoot}/health");
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadFromJsonAsync<HealthStatus>()
+            ?? throw new InvalidOperationException("Failed to deserialize health status");
+    }
+
+    public async Task<ServiceInfo> GetServiceInfo()
+    {
+        var response = await _httpClient.GetAsync($"{cUrlPathRoot}/getserviceinfo");
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadFromJsonAsync<ServiceInfo>()
+            ?? throw new InvalidOperationException("Failed to deserialize health status");
+    }
+}

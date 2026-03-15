@@ -1,0 +1,10 @@
+using System;
+using PeakLogix.LogixPro.Common.Shared.Requests;
+
+namespace PeakLogix.LogixPro.App.Shared.Requests.v1;
+
+public class GetAllClientLookupItemsReq : ISortingRequest
+{
+	public string SortBy { get; set; } = null!;
+	public bool SortDesc { get; set; }
+}

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <AssemblyName>PeakLogix.LogixPro.AdAgent.Server</AssemblyName>
+	  <RootNamespace>PeakLogix.LogixPro.AdAgent.Server</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Server\Common.Server.csproj" />
+    <ProjectReference Include="..\AdAgent.Api\AdAgent.Api.csproj" />
+  </ItemGroup>
+
+</Project>

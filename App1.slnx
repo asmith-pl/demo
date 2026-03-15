@@ -1,0 +1,98 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Dbg-Ext" />
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/design/" />
+  <Folder Name="/docs/">
+    <File Path="docs/adagent_auth.json" />
+    <File Path="docs/adagent_config.json" />
+    <File Path="docs/AuthTest.gmdl" />
+    <File Path="docs/AuthTest.gmdl.diagram" />
+    <File Path="docs/AzureDeploymentGuide.md" />
+  </Folder>
+  <Folder Name="/scripts/">
+    <File Path="scripts/LogixPro_Working1.sql" />
+    <File Path="scripts/Auth_CreateSchema.sql" />
+    <File Path="scripts/Auth_Wk1.sql" />
+    <File Path="scripts/EF Commands.txt" />
+    <File Path="scripts/RunAngular.bat" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/AdAgent/">
+    <Project Path="src/AdAgent/AdAgent.Api/AdAgent.Api.csproj" Id="a728c647-b257-43e1-a860-96085900fa52">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/AdAgent/AdAgent.Server/AdAgent.Server.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/AdAgent/AdAgent.Shared/AdAgent.Shared.csproj" Id="7950dc12-2bdd-4785-b5ea-bf9d2ac0b964">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/App/">
+    <Project Path="src/App/App.Api/App.Api.csproj" />
+    <Project Path="src/App/App.Server/App.Server.csproj" />
+    <Project Path="src/App/App.Shared/App.Shared.csproj" />
+  </Folder>
+  <Folder Name="/src/Aspire/">
+    <Project Path="src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/Auth/">
+    <Project Path="src/Auth/Auth.Api/Auth.Api.csproj" />
+    <Project Path="src/Auth/Auth.Data/Auth.Data.csproj" />
+    <Project Path="src/Auth/Auth.Server/Auth.Server.csproj" />
+    <Project Path="src/Auth/Auth.Shared/Auth.Shared.csproj" />
+  </Folder>
+  <Folder Name="/src/Common/">
+    <Project Path="src/Common/Common.Api/Common.Api.csproj" Id="4c238e5c-16c2-46d7-a162-2ff2f6633bc9">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/Common/Common.Server/Common.Server.csproj" Id="385ae6d4-4fa0-4e03-ab78-02df20eadc31">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/Common/Common.Shared/Common.Shared.csproj" Id="781aeae7-6eb6-4529-ba1d-5c7de27ca2ab">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/Functions/">
+    <Project Path="src/Functions/LogixPro.Functions/LogixPro.Functions.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/Integration/">
+    <Project Path="src/Integration/Integration.Api/Integration.Api.csproj" />
+    <Project Path="src/Integration/Integration.Server/Integration.Server.csproj" />
+    <Project Path="src/Integration/Integration.Shared/Integration.Shared.csproj" />
+  </Folder>
+  <Folder Name="/src/Portal/">
+    <Project Path="src/Portal/Portal.Server/Portal.Server.csproj" />
+  </Folder>
+  <Folder Name="/src/UI/">
+    <Project Path="src/UI/Angular/Angular.esproj">
+      <Platform Project="AnyCPU" />
+      <Build />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tests.Common/Tests.Common.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+    <Project Path="tests/Tests.Integration/Tests.Integration.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+    <Project Path="tests/Tests.Unit/Tests.Unit.csproj" Id="77c35258-707f-4b22-a708-b6f4d788c639">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+  </Folder>
+</Solution>

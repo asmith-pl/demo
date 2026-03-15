@@ -1,0 +1,30 @@
+using PeakLogix.LogixPro.App.Shared.Dtos;
+
+namespace PeakLogix.LogixPro.App.Api.Entities;
+
+public partial class Client
+{
+	// PK
+	public Guid Id { get; set; }
+
+	// Rowversion
+	public byte[] RowVersion { get; set; } = null!;
+
+	// Properties
+	public string Key { get; set; } = null!;
+	public string Name { get; set; } = null!;
+	public string? BaseUrl { get; set; }
+
+	#region PropNames
+
+	public static class PropNames
+	{
+		public const string Id = "Id";
+		public const string Key = "Key";
+		public const string Name = "Name";
+		public const string BaseUrl = "BaseUrl";
+		public const string RowVersion = "RowVersion";
+	}
+
+	#endregion
+}

@@ -1,0 +1,19 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.0.0">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>aspire-apphost-app1</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\AdAgent\AdAgent.Server\AdAgent.Server.csproj" />
+	  <ProjectReference Include="..\..\App\App.Server\App.Server.csproj" />
+	  <ProjectReference Include="..\..\Auth\Auth.Server\Auth.Server.csproj" />
+	  <ProjectReference Include="..\..\Integration\Integration.Server\Integration.Server.csproj" />
+	  <ProjectReference Include="..\..\Portal\Portal.Server\Portal.Server.csproj" />
+	</ItemGroup>
+
+</Project>
