@@ -1,9 +1,11 @@
-using PeakLogix.LogixPro.Auth.Shared.ApiClients;
-using PeakLogix.LogixPro.Common.Shared.Config;
-using PeakLogix.LogixPro.Common.Shared.Contracts;
+using PeakLogix.App1.Auth.Shared.ApiClients;
+using PeakLogix.App1.Auth.Shared.ApiClients.v1;
+using PeakLogix.App1.Auth.Shared.Contracts.v1;
+using PeakLogix.App1.Common.Shared.Config;
+using PeakLogix.App1.Common.Shared.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.LogixPro.Auth.Shared.Extensions;
+namespace PeakLogix.App1.Auth.Shared.Extensions;
 
 public static partial class AuthSharedServiceCollExt
 {
@@ -26,8 +28,17 @@ public static partial class AuthSharedServiceCollExt
                 client.BaseAddress = new Uri(baseUrl);
             });
 
+            services.AddHttpContextAccessor();
+            services.AddTransient<TenantApiBearerTokenHandler>();
+
             // Add code-generated services
             AddGeneratedServices(services);
+
+            services.AddHttpClient<ITenantService, TenantApiClient>(client =>
+            {
+                client.BaseAddress = new Uri(baseUrl);
+            })
+            .AddHttpMessageHandler<TenantApiBearerTokenHandler>();
         }
 
         return services;

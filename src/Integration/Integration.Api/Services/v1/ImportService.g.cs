@@ -7,11 +7,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using PeakLogix.LogixPro.Common.Shared.Exceptions;
-using PeakLogix.LogixPro.Common.Shared.Requests;
-using PeakLogix.LogixPro.App.Shared.Contracts.v1;
+using PeakLogix.App1.Common.Shared.Exceptions;
+using PeakLogix.App1.Common.Shared.Requests;
+using PeakLogix.App1.App.Shared.Contracts.v1;
 
-namespace PeakLogix.LogixPro.App.Api.Services.v1;
+namespace PeakLogix.App1.App.Api.Services.v1;
 
 public partial class ImportService : IImportService
 {

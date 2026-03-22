@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<modelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e9fabaa9-3f8d-4e78-a0a7-f03bdd0bda15" name="AuthTest" entitiesOutputFolder="src\Auth\Auth.Data\Entities" entitiesNamespace="PeakLogix.LogixPro.Auth.Data.Entities" dbContextOutputFolder="src\Auth\Auth.Data\Context" dbContextNamespace="PeakLogix.LogixPro.Auth.Data.Context" dbContextUsings="Microsoft.AspNetCore.Identity.EntityFrameworkCore" enumsOutputFolder="src\Auth\Auth.Shared\DTOs" enumsNamespace="PeakLogix.LogixPro.Auth.Shared.DTOs" inclHeader="false" permissions="Permission1|&#xA;Permission2|&#xA;Permission3|" dbContextName="AuthDbContext" commonNamespace="PeakLogix.LogixPro.Common" intTestsRootFolder="tests\Tests.Integration" intTestsNamespace="PeakLogix.Auth.Tests.Integration" unitTestsRootFolder="tests\Tests.Unit" unitTestsNamespace="PeakLogix.LogixPro.Tests.Unit" intTestsEnabled="false" unitTestsEnabled="false" dbContextBaseClass="IdentityDbContext&lt;ApplicationUser&gt;" xmlns="http://schemas.microsoft.com/dsltools/GenIt">
+<?xml version="1.0" encoding="utf-8"?>
+<modelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e9fabaa9-3f8d-4e78-a0a7-f03bdd0bda15" name="AuthTest" entitiesOutputFolder="src\Auth\Auth.Data\Entities" entitiesNamespace="PeakLogix.App1.Auth.Data.Entities" dbContextOutputFolder="src\Auth\Auth.Data\Context" dbContextNamespace="PeakLogix.App1.Auth.Data.Context" dbContextUsings="Microsoft.AspNetCore.Identity.EntityFrameworkCore" enumsOutputFolder="src\Auth\Auth.Shared\DTOs" enumsNamespace="PeakLogix.App1.Auth.Shared.DTOs" inclHeader="false" permissions="Permission1|&#xA;Permission2|&#xA;Permission3|" dbContextName="AuthDbContext" commonNamespace="PeakLogix.App1.Common" intTestsRootFolder="tests\Tests.Integration" intTestsNamespace="PeakLogix.Auth.Tests.Integration" unitTestsRootFolder="tests\Tests.Unit" unitTestsNamespace="PeakLogix.App1.Tests.Unit" intTestsEnabled="false" unitTestsEnabled="false" dbContextBaseClass="IdentityDbContext&lt;ApplicationUser&gt;" xmlns="http://schemas.microsoft.com/dsltools/GenIt">
   <types>
     <modelRootHasTypes Id="599b7180-b696-4344-bde3-014ff20032e4">
       <entityModel Id="fbcf2b7a-05a3-402f-abf1-93ef79b970cd" name="AspNetRoleClaims" auditable="false" generateCode="false" inclRowVersion="false" enabled="true" tableName="AspNetRoleClaims">
@@ -192,7 +192,7 @@
       </entityModel>
     </modelRootHasTypes>
     <modelRootHasTypes Id="9907bdb7-bd83-4a9a-8a53-8317d558648e">
-      <moduleModel Id="b30393c7-35e1-4388-bd9e-234d54ac95eb" name="Auth" rootFolder="src\Auth" namespace="PeakLogix.LogixPro.Auth" dtoNamespace="PeakLogix.LogixPro.Auth.Shared.DTOs" requestNamespace="PeakLogix.LogixPro.Auth.Shared.Requests" dtoOuputFolder="src\Auth\Auth.Shared\DTOs" />
+      <moduleModel Id="b30393c7-35e1-4388-bd9e-234d54ac95eb" name="Auth" rootFolder="src\Auth" namespace="PeakLogix.App1.Auth" dtoNamespace="PeakLogix.App1.Auth.Shared.DTOs" requestNamespace="PeakLogix.App1.Auth.Shared.Requests" dtoOuputFolder="src\Auth\Auth.Shared\DTOs" />
     </modelRootHasTypes>
     <modelRootHasTypes Id="b4d72a7b-fbd3-4025-b3d4-352ebea2501d">
       <enumModel Id="632c7432-4bcd-4229-af4b-5e9770eddf65" name="AuthMode">

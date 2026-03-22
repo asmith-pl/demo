@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
 using System.Runtime.CompilerServices;
 
-namespace PeakLogix.LogixPro.Common.Api.Logging;
+namespace PeakLogix.App1.Common.Api.Logging;
 
 /// <summary>
 /// Thin wrapper around ILogger that includes a module name in the scope.

@@ -1,6 +1,6 @@
-﻿using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.DTOs;
 
-namespace PeakLogix.LogixPro.Portal.Server.DTOs;
+namespace PeakLogix.App1.Portal.Server.DTOs;
 
 public class PortalHealthStatus : HealthStatus
 {

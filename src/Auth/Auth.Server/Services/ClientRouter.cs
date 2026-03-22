@@ -1,6 +1,6 @@
-using PeakLogix.LogixPro.App.Shared.Contracts.v1;
+using PeakLogix.App1.App.Shared.Contracts.v1;
 
-namespace PeakLogix.LogixPro.Auth.Server.Services
+namespace PeakLogix.App1.Auth.Server.Services
 {
 	public interface IClientRouter
 	{

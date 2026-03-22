@@ -1,6 +1,6 @@
-using PeakLogix.LogixPro.Portal.Server.DTOs;
+using PeakLogix.App1.Portal.Server.DTOs;
 
-namespace LogixPro.LogixPro.Portal.Server.Interfaces;
+namespace App1.App1.Portal.Server.Interfaces;
 
 public interface IPortalSystemService
 {

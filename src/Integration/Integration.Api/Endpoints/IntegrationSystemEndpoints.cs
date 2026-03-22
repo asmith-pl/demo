@@ -1,11 +1,11 @@
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using System.Security.Claims;
 
-namespace PeakLogix.LogixPro.Integration.Api.Endpoints;
+namespace PeakLogix.App1.Integration.Api.Endpoints;
 
 public static class IntegrationSystemEndpoints
 {

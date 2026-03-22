@@ -1,9 +1,9 @@
-using LogixPro.Auth.Api;
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using App1.Auth.Api;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using Microsoft.Extensions.Logging;
 
-namespace PeakLogix.LogixPro.Auth.Api.Services;
+namespace PeakLogix.App1.Auth.Api.Services;
 
 public class AuthSystemService : ISystemService
 {

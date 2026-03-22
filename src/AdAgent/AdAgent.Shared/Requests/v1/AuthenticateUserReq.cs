@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.AdAgent.Shared.Requests.v1;
+namespace PeakLogix.App1.AdAgent.Shared.Requests.v1;
 
 public class AuthenticateUserReq
 {

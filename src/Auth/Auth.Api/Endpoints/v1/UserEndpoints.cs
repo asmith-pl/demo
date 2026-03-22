@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
-using PeakLogix.LogixPro.Auth.Shared.Contracts.v1;
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
-using PeakLogix.LogixPro.Auth.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Auth.Shared.Contracts.v1;
+using PeakLogix.App1.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.DTOs;
 
-namespace PeakLogix.LogixPro.Auth.Endpoints.v1;
+namespace PeakLogix.App1.Auth.Endpoints.v1;
 
 public static class UserEndpoints
 {

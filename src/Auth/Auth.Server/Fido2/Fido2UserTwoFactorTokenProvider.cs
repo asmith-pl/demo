@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
-using PeakLogix.LogixPro.Auth.Data;
+using Microsoft.AspNetCore.Identity;
+using PeakLogix.App1.Auth.Data;
 
-namespace PeakLogix.LogixPro.Auth.Server.Fido2;
+namespace PeakLogix.App1.Auth.Server.Fido2;
 
 public class Fido2UserTwoFactorTokenProvider : IUserTwoFactorTokenProvider<ApplicationUser>
 {

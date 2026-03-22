@@ -1,16 +1,21 @@
-using PeakLogix.LogixPro.Auth.Api.Config;
-using PeakLogix.LogixPro.Auth.Api.Endpoints;
-using PeakLogix.LogixPro.Auth.Api.Repositories;
-using PeakLogix.LogixPro.Auth.Api.Services;
-using PeakLogix.LogixPro.Auth.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.Contracts;
+using PeakLogix.App1.Auth.Api.Config;
+using PeakLogix.App1.Auth.Api.Endpoints;
+using PeakLogix.App1.Auth.Api.Repositories;
+using PeakLogix.App1.Auth.Api.Services;
+using PeakLogix.App1.Auth.Api.Services.v1;
+using PeakLogix.App1.Auth.Endpoints.v1;
+using PeakLogix.App1.Common.Api.Extensions;
+using PeakLogix.App1.Common.Api.Filters;
+using PeakLogix.App1.Auth.Shared.Contracts;
+using PeakLogix.App1.Auth.Shared.Contracts.v1;
+using PeakLogix.App1.Common.Shared.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
-namespace PeakLogix.LogixPro.Auth.Api.Extensions;
+namespace PeakLogix.App1.Auth.Api.Extensions;
 
 public static partial class AuthApiServiceCollExt
 {
@@ -24,9 +29,13 @@ public static partial class AuthApiServiceCollExt
     /// </summary>
     public static IServiceCollection AddAuthApiServices(this IServiceCollection services, bool isInProcess)
     {
+        services.AddCurrentUserServices();
+
         // Register business logic services
         services.AddScoped<ISystemService, AuthSystemService>();
         services.AddScoped<BrandImgService>();
+        services.AddScoped<IOidcAppService, OidcAppService>();
+        services.AddScoped<ApiExceptionFilter<OidcAppService>>();
 
         if (!isInProcess)
         {
@@ -47,6 +56,7 @@ public static partial class AuthApiServiceCollExt
     {
         app.MapAuthSystemEndpoints();
         app.MapBrandImgEndpoints();
+        app.MapOidcAppEndpoints();
 
         MapGeneratedEndpoints(app);
 

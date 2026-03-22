@@ -1,7 +1,7 @@
-using PeakLogix.LogixPro.Auth.Data;
-using PeakLogix.LogixPro.Auth.Data.Context;
-using PeakLogix.LogixPro.Auth.Data.Entities;
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Data;
+using PeakLogix.App1.Auth.Data.Context;
+using PeakLogix.App1.Auth.Data.Entities;
+using PeakLogix.App1.Auth.Shared.DTOs;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
 using System.Text.Json;
@@ -13,7 +13,7 @@ using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using OpenIddict.Abstractions;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace PeakLogix.LogixPro.Auth.Server
+namespace PeakLogix.App1.Auth.Server
 {
     public class Worker(IServiceProvider serviceProvider, ILogger<Worker> logger) : BackgroundService
     {
@@ -155,7 +155,7 @@ namespace PeakLogix.LogixPro.Auth.Server
                 {
                     await manager.CreateAsync(new OpenIddictScopeDescriptor
                     {
-                        DisplayName = "LogixPro API access",
+                        DisplayName = "App1 API access",
                         Name = "app1-api",
                         Resources =
                         {

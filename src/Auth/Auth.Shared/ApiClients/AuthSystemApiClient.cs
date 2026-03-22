@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using System.Net.Http.Json;
 
-namespace PeakLogix.LogixPro.Auth.Shared.ApiClients;
+namespace PeakLogix.App1.Auth.Shared.ApiClients;
 
 public class AuthSystemApiClient : ISystemService
 {

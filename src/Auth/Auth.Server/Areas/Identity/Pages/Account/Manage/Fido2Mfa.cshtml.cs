@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PeakLogix.LogixPro.Auth.Server.Areas.Identity.Pages.Account.Manage;
+namespace PeakLogix.App1.Auth.Server.Areas.Identity.Pages.Account.Manage;
 
 public class MfaModel : PageModel
 {

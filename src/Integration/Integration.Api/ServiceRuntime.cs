@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.Integration.Api;
+namespace PeakLogix.App1.Integration.Api;
 
 public static class ServiceRuntime
 {

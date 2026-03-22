@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.AdAgent.Shared.DTOs;
+namespace PeakLogix.App1.AdAgent.Shared.DTOs;
 
 public enum AdAuthStatus
 {

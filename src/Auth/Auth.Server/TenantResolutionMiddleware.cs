@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Auth.Data;
-using PeakLogix.LogixPro.Auth.Data.Context;
+using PeakLogix.App1.Auth.Data;
+using PeakLogix.App1.Auth.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace PeakLogix.LogixPro.Auth.Server;
+namespace PeakLogix.App1.Auth.Server;
 
 /// <summary>
 /// Middleware that resolves the current tenant from the acr_values query parameter (acr_values=tenant:slug)

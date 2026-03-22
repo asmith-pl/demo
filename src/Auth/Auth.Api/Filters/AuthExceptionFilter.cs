@@ -1,7 +1,7 @@
-﻿//using LogixPro.Auth.Api;
-//using PeakLogix.LogixPro.Auth.Api.Logging;
+//using App1.Auth.Api;
+//using PeakLogix.App1.Auth.Api.Logging;
 
-//namespace PeakLogix.LogixPro.Auth.Api.Filters;
+//namespace PeakLogix.App1.Auth.Api.Filters;
 
 //public class ApiExceptionFilter<T> : Common.Api.Filters.ApiExceptionFilter<T>
 //{

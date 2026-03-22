@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.AdAgent.Api.Config
+namespace PeakLogix.App1.AdAgent.Api.Config
 {
     public class AdAgentAuthConfig
     {

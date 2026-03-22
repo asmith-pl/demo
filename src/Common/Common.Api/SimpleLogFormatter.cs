@@ -3,7 +3,7 @@
 //using Microsoft.Extensions.Logging.Console;
 //using Microsoft.Extensions.Options;
 
-//namespace PeakLogix.LogixPro.Common.Api;
+//namespace PeakLogix.App1.Common.Api;
 
 //public sealed class SimpleLogFormatter : ConsoleFormatter
 //{
@@ -33,7 +33,7 @@
 //        textWriter.Write(GetLogLevelAbbreviation(logEntry.LogLevel));
 //        textWriter.Write('\t');
 
-//        // Module and Class from category (e.g., "LogixPro.Auth.Api.Services.SystemService")
+//        // Module and Class from category (e.g., "App1.Auth.Api.Services.SystemService")
 //        var (module, className) = ParseCategory(logEntry.Category);
 //        textWriter.Write(module);
 //        textWriter.Write('\t');
@@ -63,7 +63,7 @@
 
 //    private static (string Module, string ClassName) ParseCategory(string category)
 //    {
-//        // Category format: "LogixPro.Auth.Api.Services.SystemService"
+//        // Category format: "App1.Auth.Api.Services.SystemService"
 //        // Extract module (Auth, App, Portal) and class name
 //        var parts = category.Split('.');
 

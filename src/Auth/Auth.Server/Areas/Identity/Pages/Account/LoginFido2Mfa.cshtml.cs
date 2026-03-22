@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PeakLogix.LogixPro.Auth.Server.Areas.Identity.Pages.Account;
+namespace PeakLogix.App1.Auth.Server.Areas.Identity.Pages.Account;
 
 [AllowAnonymous]
 public class MfaModel : PageModel

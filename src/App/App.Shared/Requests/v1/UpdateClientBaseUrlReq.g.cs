@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.App.Shared.Requests.v1;
+namespace PeakLogix.App1.App.Shared.Requests.v1;
 
 public class UpdateClientBaseUrlReq
 {

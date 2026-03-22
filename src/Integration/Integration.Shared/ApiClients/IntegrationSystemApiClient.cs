@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using System.Net.Http.Json;
 
-namespace PeakLogix.LogixPro.Integration.Shared.ApiClients;
+namespace PeakLogix.App1.Integration.Shared.ApiClients;
 
 public class IntegrationSystemApiClient : ISystemService
 {

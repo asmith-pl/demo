@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.AdAgent.Shared.DTOs;
+namespace PeakLogix.App1.AdAgent.Shared.DTOs;
 
 public sealed record AdAuthResult(
     AdAuthStatus Status,

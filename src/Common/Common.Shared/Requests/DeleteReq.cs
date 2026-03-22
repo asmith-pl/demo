@@ -1,4 +1,4 @@
-﻿namespace PeakLogix.LogixPro.Common.Shared.Requests;
+namespace PeakLogix.App1.Common.Shared.Requests;
 
 public class DeleteReq
 {

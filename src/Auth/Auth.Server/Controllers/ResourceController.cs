@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OpenIddict.Validation.AspNetCore;
-using PeakLogix.LogixPro.Auth.Data;
+using PeakLogix.App1.Auth.Data;
 
-namespace PeakLogix.LogixPro.Auth.Server.Controllers;
+namespace PeakLogix.App1.Auth.Server.Controllers;
 
 [Route("api")]
 public class ResourceController : Controller

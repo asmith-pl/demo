@@ -1,7 +1,7 @@
-using PeakLogix.LogixPro.Common.Shared;
+using PeakLogix.App1.Common.Shared;
 using System.Text.Json;
 
-namespace PeakLogix.LogixPro.AdAgent.Api.Config;
+namespace PeakLogix.App1.AdAgent.Api.Config;
 
 public interface IConfigRepository
 {

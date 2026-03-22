@@ -1,6 +1,6 @@
-﻿using LogixPro.LogixPro.Portal.Server.Models;
+﻿using App1.App1.Portal.Server.Models;
 
-namespace LogixPro.LogixPro.Portal.Server.Controllers;
+namespace App1.App1.Portal.Server.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

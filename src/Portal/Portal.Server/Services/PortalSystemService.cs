@@ -1,10 +1,10 @@
-using LogixPro.LogixPro.Portal.Server;
-using LogixPro.LogixPro.Portal.Server.Interfaces;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.Portal.Server.DTOs;
-using PeakLogix.LogixPro.Portal.Server.Logging;
+using App1.App1.Portal.Server;
+using App1.App1.Portal.Server.Interfaces;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.Portal.Server.DTOs;
+using PeakLogix.App1.Portal.Server.Logging;
 
-namespace PeakLogix.LogixPro.Portal.Server.Services;
+namespace PeakLogix.App1.Portal.Server.Services;
 
 public class PortalSystemService : IPortalSystemService
 {

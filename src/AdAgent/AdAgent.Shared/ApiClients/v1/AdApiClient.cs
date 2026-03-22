@@ -1,9 +1,9 @@
-using PeakLogix.LogixPro.AdAgent.Shared.Contracts.v1;
-using PeakLogix.LogixPro.AdAgent.Shared.DTOs;
-using PeakLogix.LogixPro.AdAgent.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.ApiClients;
+using PeakLogix.App1.AdAgent.Shared.Contracts.v1;
+using PeakLogix.App1.AdAgent.Shared.DTOs;
+using PeakLogix.App1.AdAgent.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.ApiClients;
 
-namespace PeakLogix.LogixPro.AdAgent.Shared.ApiClients.v1;
+namespace PeakLogix.App1.AdAgent.Shared.ApiClients.v1;
 
 public partial class AdApiClient : ApiClientBase, IAdService
 {

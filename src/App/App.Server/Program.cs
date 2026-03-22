@@ -1,16 +1,15 @@
-using PeakLogix.LogixPro.App.Api.Config;
-using PeakLogix.LogixPro.App.Api.Extensions;
-using PeakLogix.LogixPro.App.Shared.Authorization;
-using PeakLogix.LogixPro.Common.Api.Authorization;
-using PeakLogix.LogixPro.Common.Api.Extensions;
-using PeakLogix.LogixPro.Common.Server;
+using PeakLogix.App1.App.Api.Extensions;
+using PeakLogix.App1.App.Shared.Authorization;
+using PeakLogix.App1.Common.Api.Authorization;
+using PeakLogix.App1.Common.Api.Extensions;
+using PeakLogix.App1.Common.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults (telemetry, health checks, resilience)
 builder.AddServiceDefaults();
 
-var dataConfig = DataConfigBuilder.Build(builder.Configuration);
+//var dataConfig = DataConfigBuilder.Build(builder.Configuration);
 
 // Add services to the container
 if (builder.Environment.IsEnvironment("Testing"))
@@ -19,9 +18,9 @@ else
 	builder.Services.AddJwtBearerAuthentication(builder.Configuration);
 
 builder.Services.AddPermissionAuthorization();
-builder.Services.AddAppApiServices(false);
+builder.Services.AddAppApiServices(builder.Configuration, false);
 builder.Services.AddStandardApiVersioning();
-builder.Services.AddDataServices(dataConfig);
+//builder.Services.AddDataServices(dataConfig);
 
 //----------------------------------------------------------------------------------------------
 

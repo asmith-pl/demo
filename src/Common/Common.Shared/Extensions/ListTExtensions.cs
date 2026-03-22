@@ -1,6 +1,6 @@
-﻿using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.DTOs;
 
-namespace PeakLogix.LogixPro.Common.Shared.Extensions;
+namespace PeakLogix.App1.Common.Shared.Extensions;
 
 public static class ListTExtensions
 {

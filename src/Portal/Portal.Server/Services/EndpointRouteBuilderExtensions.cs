@@ -1,4 +1,4 @@
-namespace LogixPro.LogixPro.Portal.Server.Services;
+namespace App1.App1.Portal.Server.Services;
 
 public static class EndpointRouteBuilderExtensions
 {

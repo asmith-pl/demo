@@ -16,7 +16,8 @@
     <File Path="docs/AzureDeploymentGuide.md" />
   </Folder>
   <Folder Name="/scripts/">
-    <File Path="scripts/LogixPro_Working1.sql" />
+    <File Path="scripts/App1_InsertData.sql" />
+    <File Path="scripts/App1_Working1.sql" />
     <File Path="scripts/Auth_CreateSchema.sql" />
     <File Path="scripts/Auth_Wk1.sql" />
     <File Path="scripts/EF Commands.txt" />
@@ -54,10 +55,18 @@
     <Project Path="src/Common/Common.Api/Common.Api.csproj" Id="4c238e5c-16c2-46d7-a162-2ff2f6633bc9">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
+    <Project Path="src/Common/Common.Data/Common.Data.csproj" Id="6d6c5d2f-f270-487a-8318-cbd3542f1051">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
     <Project Path="src/Common/Common.Server/Common.Server.csproj" Id="385ae6d4-4fa0-4e03-ab78-02df20eadc31">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
     <Project Path="src/Common/Common.Shared/Common.Shared.csproj" Id="781aeae7-6eb6-4529-ba1d-5c7de27ca2ab">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/Functions/">
+    <Project Path="src/Functions/App1.Functions/App1.Functions.csproj">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
   </Folder>
@@ -74,6 +83,20 @@
       <Platform Project="AnyCPU" />
       <Build />
       <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tests.Common/Tests.Common.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+    <Project Path="tests/Tests.Integration/Tests.Integration.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+    <Project Path="tests/Tests.Unit/Tests.Unit.csproj" Id="77c35258-707f-4b22-a708-b6f4d788c639">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+      <Build Solution="Debug|Any CPU" Project="false" />
     </Project>
   </Folder>
 </Solution>

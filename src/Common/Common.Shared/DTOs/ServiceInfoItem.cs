@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.Common.Shared.DTOs
+namespace PeakLogix.App1.Common.Shared.DTOs
 {
     public record ServiceInfoItem(StatusLevel Status, string Name, string Value)
     {

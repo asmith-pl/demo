@@ -1,5 +1,5 @@
 // src/App/App.Shared/Authorization/AppPermissions.cs
-namespace PeakLogix.LogixPro.App.Shared.Authorization;
+namespace PeakLogix.App1.App.Shared.Authorization;
 
 public static class AppPermissions
 {

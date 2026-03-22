@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.Portal.Server.Middleware;
+namespace PeakLogix.App1.Portal.Server.Middleware;
 
 /// <summary>
 /// Extracts the tenant slug from the first subdomain of the request host
@@ -21,11 +21,6 @@ public class TenantMiddleware(RequestDelegate next)
 
     private static string? ExtractTenantSlug(string host)
     {
-        // "acme.dyvenix.com" ? "acme"
-        // "acme.localhost"   ? "acme"
-        // "localhost"        ? null (no subdomain)
-        // "127.0.0.1"       ? null (IP address)
-
         if (System.Net.IPAddress.TryParse(host, out _))
             return null;
 

@@ -1,9 +1,9 @@
-using PeakLogix.LogixPro.Auth.Data.Context;
+using PeakLogix.App1.Auth.Data.Context;
 using Fido2NetLib;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
 
-namespace PeakLogix.LogixPro.Auth.Data.Fido2;
+namespace PeakLogix.App1.Auth.Data.Fido2;
 
 public class Fido2Store
 {

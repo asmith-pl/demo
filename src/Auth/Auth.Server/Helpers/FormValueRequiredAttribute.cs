@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 
-namespace PeakLogix.LogixPro.Auth.Server.Helpers;
+namespace PeakLogix.App1.Auth.Server.Helpers;
 
 public sealed class FormValueRequiredAttribute : ActionMethodSelectorAttribute
 {

@@ -1,7 +1,7 @@
-﻿using LogixPro.LogixPro.Portal.Server;
-using PeakLogix.LogixPro.Common.Api.Logging;
+using App1.App1.Portal.Server;
+using PeakLogix.App1.Common.Api.Logging;
 
-namespace PeakLogix.LogixPro.Portal.Server.Logging
+namespace PeakLogix.App1.Portal.Server.Logging
 {
 	public interface IPortalModuleLogger : IModuleLogger
 	{

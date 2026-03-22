@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Portal.Server.Models;
+using PeakLogix.App1.Portal.Server.Models;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
 
-namespace PeakLogix.LogixPro.Portal.Server.Services;
+namespace PeakLogix.App1.Portal.Server.Services;
 
 public class TokenCacheService(
 	IDistributedCache cache,
@@ -38,7 +38,7 @@ public class TokenCacheService(
 		if (!entry.IsExpiredOrNearExpiry(RefreshBuffer))
 			return entry.AccessToken;
 
-		// Token is expired or near expiry — attempt silent refresh
+		// Token is expired or near expiry â€” attempt silent refresh
 		logger.LogDebug("Access token near expiry for session {SessionId}, refreshing", sessionId);
 		var refreshed = await tokenRefreshService.RefreshTokenAsync(entry.RefreshToken);
 

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace PeakLogix.LogixPro.Common.Shared.DTOs;
+namespace PeakLogix.App1.Common.Shared.DTOs;
 
 public class ServiceInfo
 {

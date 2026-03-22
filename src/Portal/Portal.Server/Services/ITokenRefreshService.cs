@@ -1,6 +1,6 @@
-using PeakLogix.LogixPro.Portal.Server.Models;
+using PeakLogix.App1.Portal.Server.Models;
 
-namespace PeakLogix.LogixPro.Portal.Server.Services;
+namespace PeakLogix.App1.Portal.Server.Services;
 
 public interface ITokenRefreshService
 {

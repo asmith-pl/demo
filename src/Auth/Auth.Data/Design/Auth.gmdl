@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<modelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a05f92bc-4f04-4e80-b2f9-bcdc2d98c182" name="LogixPro" entitiesOutputFolder="src\Auth\Auth.Data\Entities" entitiesNamespace="PeakLogix.LogixPro.Auth.Data.Entities" dbContextOutputFolder="src\Auth\Auth.Data\Context" dbContextNamespace="PeakLogix.LogixPro.Auth.Data.Context" enumsOutputFolder="src\Auth\Auth.Shared\DTOs" enumsNamespace="PeakLogix.LogixPro.Auth.Shared.DTOs" editorSplitterPosition="550.00000000000034" permissions="Permission1|&#xA;Permission2|&#xA;Permission3|" dbContextName="AuthDbContext" commonNamespace="PeakLogix.LogixPro.Common" intTestsRootFolder="tests\Tests.Integration" intTestsNamespace="PeakLogix.Auth.Tests.Integration" unitTestsRootFolder="tests\Tests.Unit" unitTestsNamespace="PeakLogix.LogixPro.Tests.Unit" intTestsEnabled="true" unitTestsEnabled="false" xmlns="http://schemas.microsoft.com/dsltools/GenIt">
+<?xml version="1.0" encoding="utf-8"?>
+<modelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a05f92bc-4f04-4e80-b2f9-bcdc2d98c182" name="App1" entitiesOutputFolder="src\Auth\Auth.Data\Entities" entitiesNamespace="PeakLogix.App1.Auth.Data.Entities" dbContextOutputFolder="src\Auth\Auth.Data\Context" dbContextNamespace="PeakLogix.App1.Auth.Data.Context" enumsOutputFolder="src\Auth\Auth.Shared\DTOs" enumsNamespace="PeakLogix.App1.Auth.Shared.DTOs" editorSplitterPosition="550.00000000000034" permissions="Permission1|&#xA;Permission2|&#xA;Permission3|" dbContextName="AuthDbContext" commonNamespace="PeakLogix.App1.Common" intTestsRootFolder="tests\Tests.Integration" intTestsNamespace="PeakLogix.Auth.Tests.Integration" unitTestsRootFolder="tests\Tests.Unit" unitTestsNamespace="PeakLogix.App1.Tests.Unit" intTestsEnabled="true" unitTestsEnabled="false" xmlns="http://schemas.microsoft.com/dsltools/GenIt">
   <types>
     <modelRootHasTypes Id="7e24eceb-adee-494e-b8b2-9b32679d2333">
-      <moduleModel Id="8bda6b6b-6510-4c24-b586-a36348a1a586" name="Auth" rootFolder="src\Auth" namespace="PeakLogix.LogixPro.Auth" dtoNamespace="PeakLogix.LogixPro.Auth.Shared.DTOs" requestNamespace="PeakLogix.LogixPro.Auth.Shared.Requests" dtoOuputFolder="src\Auth\Auth.Shared\DTOs" />
+      <moduleModel Id="8bda6b6b-6510-4c24-b586-a36348a1a586" name="Auth" rootFolder="src\Auth" namespace="PeakLogix.App1.Auth" dtoNamespace="PeakLogix.App1.Auth.Shared.DTOs" requestNamespace="PeakLogix.App1.Auth.Shared.Requests" dtoOuputFolder="src\Auth\Auth.Shared\DTOs" />
     </modelRootHasTypes>
     <modelRootHasTypes Id="a8097145-a7cc-491b-b268-91476a8cf47d">
       <entityModel Id="5bd2d97c-7645-4147-a381-b43512adfb2e" name="Tenant" auditable="false" inclRowVersion="false" module="Auth" enabled="false" tableName="Tenant">
@@ -32,7 +32,7 @@
                         <filterPropertyModel Id="9b167b25-6f95-43da-9554-2a48792b2b8f" isOptional="false" isInternal="false" isPartialMatch="false">
                           <propertyModel>
                             <filterPropertyModelHasProperty Id="b4182ad1-5d2d-4b7f-8f9d-d03bd81dba7f">
-                              <propertyModelMoniker name="/LogixPro/Tenant/Id" />
+                              <propertyModelMoniker name="/App1/Tenant/Id" />
                             </filterPropertyModelHasProperty>
                           </propertyModel>
                         </filterPropertyModel>
@@ -63,7 +63,7 @@
                         <updatePropertyModel Id="91f29125-fcb2-4dc8-89ae-1daa78e2436d" isOptional="false">
                           <propertyModel>
                             <updatePropertyModelHasPropertyModel Id="0a1d4510-6eb1-47fa-aa87-5b2644d2143a">
-                              <propertyModelMoniker name="/LogixPro/Tenant/Name" />
+                              <propertyModelMoniker name="/App1/Tenant/Name" />
                             </updatePropertyModelHasPropertyModel>
                           </propertyModel>
                         </updatePropertyModel>
@@ -77,22 +77,22 @@
                   <dtoModel Id="85e6cbb2-cee4-44d4-b865-7e4a487ce8fb" name="Dto1">
                     <propertyModels>
                       <dtoModelReferencesPropertyModels Id="3b18ea51-3c0f-47d8-95db-281fe704810a">
-                        <propertyModelMoniker name="/LogixPro/Tenant/Id" />
+                        <propertyModelMoniker name="/App1/Tenant/Id" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="800d53b6-386d-41c5-a304-58b446d6d2ac">
-                        <propertyModelMoniker name="/LogixPro/Tenant/Name" />
+                        <propertyModelMoniker name="/App1/Tenant/Name" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="ac380a0d-25f8-4474-ad1a-2b282a1715a7">
-                        <propertyModelMoniker name="/LogixPro/Tenant/Slug" />
+                        <propertyModelMoniker name="/App1/Tenant/Slug" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="5b0be9eb-af89-45aa-8e87-48ad327185fe">
-                        <propertyModelMoniker name="/LogixPro/Tenant/ExternalClientId" />
+                        <propertyModelMoniker name="/App1/Tenant/ExternalClientId" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="ee58e2cd-bf01-4883-b049-809fc2eca026">
-                        <propertyModelMoniker name="/LogixPro/Tenant/ExternalClientSecret" />
+                        <propertyModelMoniker name="/App1/Tenant/ExternalClientSecret" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="93c5d1e0-8ae1-4c6e-b195-ca53179c3a43">
-                        <propertyModelMoniker name="/LogixPro/Tenant/ADDcHost" />
+                        <propertyModelMoniker name="/App1/Tenant/ADDcHost" />
                       </dtoModelReferencesPropertyModels>
                     </propertyModels>
                   </dtoModel>
@@ -101,22 +101,22 @@
                   <dtoModel Id="b707326c-9868-422e-a343-bc2cbf33b7c1" name="Dto2">
                     <propertyModels>
                       <dtoModelReferencesPropertyModels Id="38e92c3a-f27c-48c5-b564-c00d0160bd06">
-                        <propertyModelMoniker name="/LogixPro/Tenant/AuthMode" />
+                        <propertyModelMoniker name="/App1/Tenant/AuthMode" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="28cfc2b3-3ea5-41fa-bc2c-70f015ce9e38">
-                        <propertyModelMoniker name="/LogixPro/Tenant/IsActive" />
+                        <propertyModelMoniker name="/App1/Tenant/IsActive" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="a1da9518-122e-4186-bcdd-cdc9909bd8e0">
-                        <propertyModelMoniker name="/LogixPro/Tenant/CreatedAt" />
+                        <propertyModelMoniker name="/App1/Tenant/CreatedAt" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="454fcb84-4438-4568-b245-31420d402fda">
-                        <propertyModelMoniker name="/LogixPro/Tenant/ExternalAuthority" />
+                        <propertyModelMoniker name="/App1/Tenant/ExternalAuthority" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="6f85c044-b6e7-4d3a-971e-4b96f202e29b">
-                        <propertyModelMoniker name="/LogixPro/Tenant/ExternalClientSecret" />
+                        <propertyModelMoniker name="/App1/Tenant/ExternalClientSecret" />
                       </dtoModelReferencesPropertyModels>
                       <dtoModelReferencesPropertyModels Id="24b683f3-8976-427e-a21d-d4c9f4b7f39e">
-                        <propertyModelMoniker name="/LogixPro/Tenant/ADDomain" />
+                        <propertyModelMoniker name="/App1/Tenant/ADDomain" />
                       </dtoModelReferencesPropertyModels>
                     </propertyModels>
                   </dtoModel>

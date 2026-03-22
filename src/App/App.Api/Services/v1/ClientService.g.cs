@@ -4,24 +4,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using PeakLogix.LogixPro.App.Api.Context;
-using PeakLogix.LogixPro.App.Shared.Dtos;
-using PeakLogix.LogixPro.App.Api.Entities;
-using PeakLogix.LogixPro.Common.Shared.Exceptions;
-using PeakLogix.LogixPro.App.Shared.Contracts.v1;
-using PeakLogix.LogixPro.App.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.Extensions;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.Common.Shared.Requests;
+using PeakLogix.App1.App.Api.Context;
+using PeakLogix.App1.App.Shared.Dtos;
+using PeakLogix.App1.App.Api.Entities;
+using PeakLogix.App1.Common.Shared.Exceptions;
+using PeakLogix.App1.App.Shared.Contracts.v1;
+using PeakLogix.App1.App.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.Extensions;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Requests;
 
-namespace PeakLogix.LogixPro.App.Api.Services.v1;
+namespace PeakLogix.App1.App.Api.Services.v1;
 
 public partial class ClientService : IClientService
 {
 	private readonly ILogger<ClientService> _logger;
-	private readonly LogixProDb _db;
+	private readonly App1Db _db;
 
-	public ClientService(LogixProDb db, ILogger<ClientService> logger)
+	public ClientService(App1Db db, ILogger<ClientService> logger)
 	{
 		_db = db;
 		_logger = logger;
@@ -132,7 +132,10 @@ public partial class ClientService : IClientService
 			e.Id,
 			e.Key,
 			e.Name,
-			e.BaseUrl
+			e.BaseUrl,
+			e.ExtAuthId,
+			e.ExtClientId,
+			e.RowVersion
 		))
 		.SingleOrDefaultAsync();
 	}
@@ -148,7 +151,10 @@ public partial class ClientService : IClientService
 			e.Id,
 			e.Key,
 			e.Name,
-			e.BaseUrl
+			e.BaseUrl,
+			e.ExtAuthId,
+			e.ExtClientId,
+			e.RowVersion
 		))
 		.SingleOrDefaultAsync();
 	}
@@ -197,7 +203,10 @@ public partial class ClientService : IClientService
 			e.Id,
 			e.Key,
 			e.Name,
-			e.BaseUrl
+			e.BaseUrl,
+			e.ExtAuthId,
+			e.ExtClientId,
+			e.RowVersion
 		))
 		.ToListAsync();
 	}
@@ -273,6 +282,54 @@ public partial class ClientService : IClientService
 				return dbQuery.OrderByDescending(x => x.RowVersion);
 			else
 				return dbQuery.OrderBy(x => x.RowVersion);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.CreatedUtc, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.CreatedUtc);
+			else
+				return dbQuery.OrderBy(x => x.CreatedUtc);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.CreatedByUserId, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.CreatedByUserId);
+			else
+				return dbQuery.OrderBy(x => x.CreatedByUserId);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.ModifiedUtc, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.ModifiedUtc);
+			else
+				return dbQuery.OrderBy(x => x.ModifiedUtc);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.ModifiedByUserId, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.ModifiedByUserId);
+			else
+				return dbQuery.OrderBy(x => x.ModifiedByUserId);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.DeletedUtc, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.DeletedUtc);
+			else
+				return dbQuery.OrderBy(x => x.DeletedUtc);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.DeletedByUserId, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.DeletedByUserId);
+			else
+				return dbQuery.OrderBy(x => x.DeletedByUserId);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.ExtAuthId, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.ExtAuthId);
+			else
+				return dbQuery.OrderBy(x => x.ExtAuthId);
+	
+		if (string.Equals(sortingRequest.SortBy, Client.PropNames.ExtClientId, StringComparison.OrdinalIgnoreCase))
+			if (sortingRequest.SortDesc)
+				return dbQuery.OrderByDescending(x => x.ExtClientId);
+			else
+				return dbQuery.OrderBy(x => x.ExtClientId);
 		return dbQuery;
 	}
 	

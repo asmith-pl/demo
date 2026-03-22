@@ -1,9 +1,9 @@
-using PeakLogix.LogixPro.Auth.Api.Services;
+using PeakLogix.App1.Auth.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace PeakLogix.LogixPro.Auth.Api.Endpoints;
+namespace PeakLogix.App1.Auth.Api.Endpoints;
 
 public static class BrandImgEndpoints
 {

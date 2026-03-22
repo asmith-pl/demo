@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Auth.Data.Entities;
-using PeakLogix.LogixPro.Auth.Data.Fido2;
+using PeakLogix.App1.Auth.Data.Entities;
+using PeakLogix.App1.Auth.Data.Fido2;
 using Microsoft.EntityFrameworkCore;
 
-namespace PeakLogix.LogixPro.Auth.Data.Context;
+namespace PeakLogix.App1.Auth.Data.Context;
 
 public partial class AuthDbContext
 {

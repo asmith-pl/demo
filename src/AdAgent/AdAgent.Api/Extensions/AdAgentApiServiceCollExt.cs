@@ -1,13 +1,14 @@
-using PeakLogix.LogixPro.AdAgent.Api.Config;
-using PeakLogix.LogixPro.AdAgent.Api.Endpoints;
-using PeakLogix.LogixPro.App.Api.Services;
-using PeakLogix.LogixPro.Common.Shared.Contracts;
+using PeakLogix.App1.AdAgent.Api.Config;
+using PeakLogix.App1.AdAgent.Api.Endpoints;
+using PeakLogix.App1.App.Api.Services;
+using PeakLogix.App1.Common.Api.Extensions;
+using PeakLogix.App1.Common.Shared.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
-namespace PeakLogix.LogixPro.AdAgent.Api.Extensions;
+namespace PeakLogix.App1.AdAgent.Api.Extensions;
 
 public static partial class AdAgentApiServiceCollExt
 {
@@ -21,6 +22,8 @@ public static partial class AdAgentApiServiceCollExt
     /// </summary>
     public static IServiceCollection AddAdAgentApiServices(this IServiceCollection services, AdAgentConfig adAgentConfig)
     {
+        services.AddCurrentUserServices();
+
         // Register business logic services
         services.AddScoped<ISystemService, AdAgentSystemService>();
         services.AddScoped<IConfigRepository, ConfigRepository>();

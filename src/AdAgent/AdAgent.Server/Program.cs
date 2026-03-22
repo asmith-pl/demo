@@ -1,7 +1,7 @@
-using PeakLogix.LogixPro.AdAgent.Api.Config;
-using PeakLogix.LogixPro.AdAgent.Api.Extensions;
-using PeakLogix.LogixPro.Common.Api.Extensions;
-using PeakLogix.LogixPro.Common.Server;
+using PeakLogix.App1.AdAgent.Api.Config;
+using PeakLogix.App1.AdAgent.Api.Extensions;
+using PeakLogix.App1.Common.Api.Extensions;
+using PeakLogix.App1.Common.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 

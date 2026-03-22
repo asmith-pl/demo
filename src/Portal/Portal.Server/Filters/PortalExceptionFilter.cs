@@ -1,8 +1,8 @@
-﻿//using LogixPro.LogixPro.Portal.Server;
-//using PeakLogix.LogixPro.Common.Api.Filters;
-//using PeakLogix.LogixPro.Portal.Server.Logging;
+//using App1.App1.Portal.Server;
+//using PeakLogix.App1.Common.Api.Filters;
+//using PeakLogix.App1.Portal.Server.Logging;
 
-//namespace PeakLogix.LogixPro.Portal.Server.Filters;
+//namespace PeakLogix.App1.Portal.Server.Filters;
 
 //public class PortalExceptionFilter<T> : ApiExceptionFilter<T>
 //{

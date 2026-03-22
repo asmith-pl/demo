@@ -1,11 +1,11 @@
-using LogixPro.Auth.Api;
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using App1.Auth.Api;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace PeakLogix.LogixPro.Auth.Api.Endpoints;
+namespace PeakLogix.App1.Auth.Api.Endpoints;
 
 public static class AuthSystemEndpoints
 {

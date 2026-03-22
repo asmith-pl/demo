@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.IdentityModel.Tokens.Jwt;
@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 
-namespace PeakLogix.LogixPro.Common.Api.Authorization;
+namespace PeakLogix.App1.Common.Api.Authorization;
 
 public sealed class TestJwtAuthenticationHandler(
     IOptionsMonitor<AuthenticationSchemeOptions> options,

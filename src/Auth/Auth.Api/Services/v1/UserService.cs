@@ -1,15 +1,15 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using PeakLogix.LogixPro.Auth.Data;
-using PeakLogix.LogixPro.Auth.Data.Context;
-using PeakLogix.LogixPro.Auth.Shared.Contracts.v1;
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
-using PeakLogix.LogixPro.Auth.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.Exceptions;
+using PeakLogix.App1.Auth.Data;
+using PeakLogix.App1.Auth.Data.Context;
+using PeakLogix.App1.Auth.Shared.Contracts.v1;
+using PeakLogix.App1.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
-namespace PeakLogix.LogixPro.Auth.Api.Services.v1;
+namespace PeakLogix.App1.Auth.Api.Services.v1;
 
 public class UserService(UserManager<ApplicationUser> userManager, AuthDbContext db, ILogger<UserService> logger) : IUserService
 {

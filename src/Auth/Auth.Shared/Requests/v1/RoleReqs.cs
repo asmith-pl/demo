@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.Auth.Shared.Requests.v1;
+namespace PeakLogix.App1.Auth.Shared.Requests.v1;
 
 public class CreateRoleReq
 {

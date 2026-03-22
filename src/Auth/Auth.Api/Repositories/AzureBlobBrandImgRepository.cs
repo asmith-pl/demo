@@ -1,10 +1,10 @@
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
-using PeakLogix.LogixPro.Auth.Api.Config;
-using PeakLogix.LogixPro.Auth.Shared.Contracts;
+using PeakLogix.App1.Auth.Api.Config;
+using PeakLogix.App1.Auth.Shared.Contracts;
 using Microsoft.Extensions.Options;
 
-namespace PeakLogix.LogixPro.Auth.Api.Repositories;
+namespace PeakLogix.App1.Auth.Api.Repositories;
 
 public class AzureBlobBrandImgRepository : IBrandImgRepository
 {

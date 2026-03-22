@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.App.Api.Config
+namespace PeakLogix.App1.App.Api.Config
 {
     public class DataConfig
     {

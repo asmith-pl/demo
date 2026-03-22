@@ -1,11 +1,11 @@
-using PeakLogix.LogixPro.Common.Shared.ApiClients;
-using PeakLogix.LogixPro.Common.Shared.Requests;
-using PeakLogix.LogixPro.App.Shared.Contracts.v1;
-using PeakLogix.LogixPro.App.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.App.Shared.Dtos;
+using PeakLogix.App1.Common.Shared.ApiClients;
+using PeakLogix.App1.Common.Shared.Requests;
+using PeakLogix.App1.App.Shared.Contracts.v1;
+using PeakLogix.App1.App.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.App.Shared.Dtos;
 
-namespace PeakLogix.LogixPro.App.Shared.ApiClients.v1;
+namespace PeakLogix.App1.App.Shared.ApiClients.v1;
 
 public partial class ClientApiClient : ApiClientBase, IClientService
 {

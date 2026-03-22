@@ -1,7 +1,7 @@
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
-using PeakLogix.LogixPro.Auth.Shared.Requests.v1;
+using PeakLogix.App1.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Shared.Requests.v1;
 
-namespace PeakLogix.LogixPro.Auth.Shared.Contracts.v1;
+namespace PeakLogix.App1.Auth.Shared.Contracts.v1;
 
 public interface IScopeService
 {

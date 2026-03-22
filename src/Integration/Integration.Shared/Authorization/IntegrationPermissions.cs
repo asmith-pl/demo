@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.Integration.Shared.Authorization;
+namespace PeakLogix.App1.Integration.Shared.Authorization;
 
 public static class IntegrationPermissions
 {

@@ -1,12 +1,12 @@
-using PeakLogix.LogixPro.AdAgent.Shared.Contracts.v1;
-using PeakLogix.LogixPro.AdAgent.Shared.DTOs;
-using PeakLogix.LogixPro.AdAgent.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.AdAgent.Shared.Contracts.v1;
+using PeakLogix.App1.AdAgent.Shared.DTOs;
+using PeakLogix.App1.AdAgent.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.DTOs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace PeakLogix.LogixPro.AdAgent.Api.Endpoints.v1;
+namespace PeakLogix.App1.AdAgent.Api.Endpoints.v1;
 
 public static class AdEndpoints
 {

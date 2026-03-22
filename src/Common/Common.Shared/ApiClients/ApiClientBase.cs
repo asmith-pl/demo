@@ -1,11 +1,11 @@
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.Common.Shared.Exceptions;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Exceptions;
 using System.Net;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace PeakLogix.LogixPro.Common.Shared.ApiClients;
+namespace PeakLogix.App1.Common.Shared.ApiClients;
 
 public interface IApiClientBase
 {

@@ -1,11 +1,11 @@
-using PeakLogix.LogixPro.Common.Api.Logging;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.Common.Shared.Exceptions;
+using PeakLogix.App1.Common.Api.Logging;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 
-namespace PeakLogix.LogixPro.Common.Api.Filters;
+namespace PeakLogix.App1.Common.Api.Filters;
 
 /// <summary>
 /// Global exception filter that handles unhandled exceptions from controllers.

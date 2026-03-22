@@ -4,10 +4,10 @@
  * the license and the contributors participating to this project.
  */
 
-using PeakLogix.LogixPro.Auth.Data;
-using PeakLogix.LogixPro.Auth.Server.Helpers;
-using PeakLogix.LogixPro.Auth.Server.ViewModels.Authorization;
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Data;
+using PeakLogix.App1.Auth.Server.Helpers;
+using PeakLogix.App1.Auth.Server.ViewModels.Authorization;
+using PeakLogix.App1.Auth.Shared.DTOs;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -20,7 +20,7 @@ using OpenIddict.Server.AspNetCore;
 using System.Security.Claims;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace PeakLogix.LogixPro.Auth.Server.Controllers;
+namespace PeakLogix.App1.Auth.Server.Controllers;
 
 public class AuthorizationController : Controller
 {

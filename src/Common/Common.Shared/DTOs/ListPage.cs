@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.Common.Shared.DTOs;
+namespace PeakLogix.App1.Common.Shared.DTOs;
 
 public class ListPage<T>
 {

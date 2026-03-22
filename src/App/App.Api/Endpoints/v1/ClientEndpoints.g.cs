@@ -3,18 +3,18 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using PeakLogix.LogixPro.App.Api.Entities;
-using PeakLogix.LogixPro.App.Api.Services.v1;
-using PeakLogix.LogixPro.Common.Api.Extensions;
-using PeakLogix.LogixPro.Common.Api.Filters;
-using PeakLogix.LogixPro.Common.Shared.Requests;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.App.Shared.Contracts.v1;
-using PeakLogix.LogixPro.App.Shared.Authorization;
-using PeakLogix.LogixPro.App.Shared.Dtos;
-using PeakLogix.LogixPro.App.Shared.Requests.v1;
+using PeakLogix.App1.App.Api.Entities;
+using PeakLogix.App1.App.Api.Services.v1;
+using PeakLogix.App1.Common.Api.Extensions;
+using PeakLogix.App1.Common.Api.Filters;
+using PeakLogix.App1.Common.Shared.Requests;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.App.Shared.Contracts.v1;
+using PeakLogix.App1.App.Shared.Authorization;
+using PeakLogix.App1.App.Shared.Dtos;
+using PeakLogix.App1.App.Shared.Requests.v1;
 
-namespace PeakLogix.LogixPro.App.Endpoints.v1;
+namespace PeakLogix.App1.App.Endpoints.v1;
 
 public static class ClientEndpoints
 {

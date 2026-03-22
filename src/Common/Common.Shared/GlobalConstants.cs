@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.Common.Shared
+namespace PeakLogix.App1.Common.Shared
 {
     public class GlobalConstants
     {

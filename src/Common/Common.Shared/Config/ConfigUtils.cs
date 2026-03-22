@@ -1,4 +1,4 @@
-﻿namespace PeakLogix.LogixPro.Common.Shared.Config;
+namespace PeakLogix.App1.Common.Shared.Config;
 
 public static class ConfigUtils
 {

@@ -1,7 +1,7 @@
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.DTOs;
 using Microsoft.AspNetCore.Http;
 
-namespace PeakLogix.LogixPro.Common.Api.Extensions;
+namespace PeakLogix.App1.Common.Api.Extensions;
 
 public static class ResultExt
 {

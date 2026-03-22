@@ -1,6 +1,6 @@
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Shared.DTOs;
 
-namespace PeakLogix.LogixPro.Auth.Data.Entities;
+namespace PeakLogix.App1.Auth.Data.Entities;
 
 public partial class Tenant
 {

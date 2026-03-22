@@ -1,4 +1,4 @@
-//namespace PeakLogix.LogixPro.Common.Shared.ApiClients;
+//namespace PeakLogix.App1.Common.Shared.ApiClients;
 
 //public interface ISystemApiClient
 //{

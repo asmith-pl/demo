@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.App.Api
+namespace PeakLogix.App1.App.Api
 {
     public class AppConstants
     {

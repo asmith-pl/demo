@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<AssemblyName>PeakLogix.LogixPro.Common.Server</AssemblyName>
-		<RootNamespace>PeakLogix.LogixPro.Common.Server</RootNamespace>
+		<AssemblyName>PeakLogix.App1.Common.Server</AssemblyName>
+		<RootNamespace>PeakLogix.App1.Common.Server</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

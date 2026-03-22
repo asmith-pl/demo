@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using Microsoft.Extensions.Logging;
 
-namespace PeakLogix.LogixPro.App.Api.Services;
+namespace PeakLogix.App1.App.Api.Services;
 
 public class AppSystemService : ISystemService
 {

@@ -1,5 +1,5 @@
 
-namespace PeakLogix.LogixPro.AdAgent.Api;
+namespace PeakLogix.App1.AdAgent.Api;
 
 public static class ServiceRuntime
 {

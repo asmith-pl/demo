@@ -1,7 +1,7 @@
-using PeakLogix.LogixPro.Portal.Server.Models;
+using PeakLogix.App1.Portal.Server.Models;
 using System.Text.Json;
 
-namespace PeakLogix.LogixPro.Portal.Server.Services;
+namespace PeakLogix.App1.Portal.Server.Services;
 
 public class TokenRefreshService(
 	IHttpClientFactory httpClientFactory,

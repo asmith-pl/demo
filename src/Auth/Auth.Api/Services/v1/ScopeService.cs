@@ -1,11 +1,11 @@
 using Microsoft.Extensions.Logging;
 using OpenIddict.Abstractions;
-using PeakLogix.LogixPro.Auth.Shared.Contracts.v1;
-using PeakLogix.LogixPro.Auth.Shared.DTOs;
-using PeakLogix.LogixPro.Auth.Shared.Requests.v1;
-using PeakLogix.LogixPro.Common.Shared.Exceptions;
+using PeakLogix.App1.Auth.Shared.Contracts.v1;
+using PeakLogix.App1.Auth.Shared.DTOs;
+using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.App1.Common.Shared.Exceptions;
 
-namespace PeakLogix.LogixPro.Auth.Api.Services.v1;
+namespace PeakLogix.App1.Auth.Api.Services.v1;
 
 public class ScopeService(IOpenIddictScopeManager scopeManager, ILogger<ScopeService> logger) : IScopeService
 {

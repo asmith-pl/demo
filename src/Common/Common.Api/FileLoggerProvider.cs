@@ -1,6 +1,6 @@
 //using Microsoft.Extensions.Logging;
 
-//namespace PeakLogix.LogixPro.Common.Api;
+//namespace PeakLogix.App1.Common.Api;
 
 //public sealed class FileLoggerProvider(string filePath, string defaultServiceName) : ILoggerProvider
 //{

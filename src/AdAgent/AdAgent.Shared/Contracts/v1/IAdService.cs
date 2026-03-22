@@ -1,6 +1,6 @@
-using PeakLogix.LogixPro.AdAgent.Shared.DTOs;
+using PeakLogix.App1.AdAgent.Shared.DTOs;
 
-namespace PeakLogix.LogixPro.AdAgent.Shared.Contracts.v1;
+namespace PeakLogix.App1.AdAgent.Shared.Contracts.v1;
 
 public interface IAdService
 {

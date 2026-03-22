@@ -1,9 +1,9 @@
-using PeakLogix.LogixPro.Common.Api.Authorization;
+using PeakLogix.App1.Common.Api.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.LogixPro.Common.Api.Extensions;
+namespace PeakLogix.App1.Common.Api.Extensions;
 
 public static class AuthorizationExtensions
 {

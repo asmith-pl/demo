@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using System.Runtime.CompilerServices;
 
-namespace PeakLogix.LogixPro.Common.Api.Logging;
+namespace PeakLogix.App1.Common.Api.Logging;
 
 public static class LoggerExtensions
 {

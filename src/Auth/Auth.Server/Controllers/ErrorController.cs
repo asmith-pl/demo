@@ -6,9 +6,9 @@
 
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
-using PeakLogix.LogixPro.Auth.Server.ViewModels.Shared;
+using PeakLogix.App1.Auth.Server.ViewModels.Shared;
 
-namespace PeakLogix.LogixPro.Auth.Server.Controllers;
+namespace PeakLogix.App1.Auth.Server.Controllers;
 
 public class ErrorController : Controller
 {

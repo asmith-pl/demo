@@ -1,8 +1,8 @@
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Common.Shared.DTOs;
 using System.Net.Http.Json;
 
-namespace PeakLogix.LogixPro.AdAgent.Shared.ApiClients;
+namespace PeakLogix.App1.AdAgent.Shared.ApiClients;
 
 public class AdAgentSystemApiClient : ISystemService
 {

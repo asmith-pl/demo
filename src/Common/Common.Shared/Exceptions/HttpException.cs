@@ -1,6 +1,6 @@
-﻿using System.Net;
+using System.Net;
 
-namespace PeakLogix.LogixPro.Common.Shared.Exceptions;
+namespace PeakLogix.App1.Common.Shared.Exceptions;
 
 public class HttpException : Exception
 {

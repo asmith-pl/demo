@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<AssemblyName>PeakLogix.LogixPro.App.Server</AssemblyName>
-		<RootNamespace>PeakLogix.LogixPro.App.Server</RootNamespace>
+		<AssemblyName>PeakLogix.App1.App.Server</AssemblyName>
+		<RootNamespace>PeakLogix.App1.App.Server</RootNamespace>
 		<Configurations>Debug;Release;Dbg-Ext</Configurations>
 		<UserSecretsId>394c8c6d-b204-4c9e-9fda-4bd27bfcee7c</UserSecretsId>
 	</PropertyGroup>

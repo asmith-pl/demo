@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace PeakLogix.LogixPro.Auth.Data;
+namespace PeakLogix.App1.Auth.Data;
 
 public class ApplicationRole : IdentityRole
 {

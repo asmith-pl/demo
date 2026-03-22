@@ -1,6 +1,6 @@
-﻿using PeakLogix.LogixPro.Portal.Server.Services;
+using PeakLogix.App1.Portal.Server.Services;
 
-namespace LogixPro.LogixPro.Portal.Server.Controllers;
+namespace App1.App1.Portal.Server.Controllers;
 
 [Route("api/[controller]")]
 public class AccountController : ControllerBase

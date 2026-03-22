@@ -1,16 +1,16 @@
-﻿#if AUTH_INPROCESS
+#if AUTH_INPROCESS
 #endif
 #if APP_INPROCESS
-using PeakLogix.LogixPro.App.Api.Extensions;
+using PeakLogix.App1.App.Api.Extensions;
 #endif
-using LogixPro.LogixPro.Portal.Server;
-using LogixPro.LogixPro.Portal.Server.Interfaces;
-using LogixPro.LogixPro.Portal.Server.Services;
-using PeakLogix.LogixPro.Common.Api.Extensions;
-using PeakLogix.LogixPro.Common.Api.Filters;
-using PeakLogix.LogixPro.Portal.Server.Logging;
-using PeakLogix.LogixPro.Portal.Server.Middleware;
-using PeakLogix.LogixPro.Portal.Server.Services;
+using App1.App1.Portal.Server;
+using App1.App1.Portal.Server.Interfaces;
+using App1.App1.Portal.Server.Services;
+using PeakLogix.App1.Common.Api.Extensions;
+using PeakLogix.App1.Common.Api.Filters;
+using PeakLogix.App1.Portal.Server.Logging;
+using PeakLogix.App1.Portal.Server.Middleware;
+using PeakLogix.App1.Portal.Server.Services;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Yarp.ReverseProxy.Configuration;
 using Yarp.ReverseProxy.Transforms;
@@ -140,7 +140,7 @@ services.AddAuthentication(options =>
 
             // Store tokens server-side
             var tokenCache = context.HttpContext.RequestServices.GetRequiredService<ITokenCacheService>();
-            await tokenCache.StoreTokensAsync(sessionId, new PeakLogix.LogixPro.Portal.Server.Models.TokenCacheEntry
+            await tokenCache.StoreTokensAsync(sessionId, new PeakLogix.App1.Portal.Server.Models.TokenCacheEntry
             {
                 AccessToken = accessToken,
                 RefreshToken = refreshToken ?? "",
@@ -207,7 +207,7 @@ services.AddReverseProxy()
 //services.AddAuthClients(configuration, authInProcess);
 #endif
 #if APP_INPROCESS
-//services.AddLogixProClient(configuration, appInProcess);
+//services.AddApp1Client(configuration, appInProcess);
 #endif
 
 builder.Services.AddApiVersioning(options =>

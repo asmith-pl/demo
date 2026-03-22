@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PeakLogix.LogixPro.Auth.Data.Migrations
+namespace PeakLogix.App1.Auth.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddMultiTenancy : Migration

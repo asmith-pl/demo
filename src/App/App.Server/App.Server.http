@@ -1,6 +1,6 @@
-@LogixPro.Server_HostAddress = http://localhost:5192
+@App1.Server_HostAddress = http://localhost:5192
 
-GET {{LogixPro.Server_HostAddress}}/weatherforecast/
+GET {{App1.Server_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

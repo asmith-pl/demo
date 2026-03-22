@@ -1,4 +1,4 @@
-namespace PeakLogix.LogixPro.Auth.Server.Helpers;
+namespace PeakLogix.App1.Auth.Server.Helpers;
 
 public static class AsyncEnumerableExtensions
 {

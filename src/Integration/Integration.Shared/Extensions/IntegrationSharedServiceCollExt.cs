@@ -1,9 +1,9 @@
-using PeakLogix.LogixPro.Common.Shared.Config;
-using PeakLogix.LogixPro.Common.Shared.Contracts;
-using PeakLogix.LogixPro.Integration.Shared.ApiClients;
+using PeakLogix.App1.Common.Shared.Config;
+using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.App1.Integration.Shared.ApiClients;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.LogixPro.Integration.Shared.Extensions;
+namespace PeakLogix.App1.Integration.Shared.Extensions;
 
 public static partial class IntegrationSharedServiceCollExt
 {

@@ -1,10 +1,10 @@
-using LogixPro.LogixPro.Portal.Server;
-using LogixPro.LogixPro.Portal.Server.Interfaces;
-using PeakLogix.LogixPro.Common.Api.Filters;
-using PeakLogix.LogixPro.Common.Shared.DTOs;
-using PeakLogix.LogixPro.Portal.Server.Services;
+using App1.App1.Portal.Server;
+using App1.App1.Portal.Server.Interfaces;
+using PeakLogix.App1.Common.Api.Filters;
+using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.App1.Portal.Server.Services;
 
-namespace PeakLogix.LogixPro.Portal.Server.Controllers;
+namespace PeakLogix.App1.Portal.Server.Controllers;
 
 [ApiController]
 [Asp.Versioning.ApiVersion("1.0")] // Fully qualified to avoid ambiguity

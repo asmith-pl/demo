@@ -1,5 +1,5 @@
 ﻿
-namespace LogixPro.Auth.Api;
+namespace App1.Auth.Api;
 
 public static class AuthConstants
 {

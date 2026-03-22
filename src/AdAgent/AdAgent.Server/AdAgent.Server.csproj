@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <AssemblyName>PeakLogix.LogixPro.AdAgent.Server</AssemblyName>
-	  <RootNamespace>PeakLogix.LogixPro.AdAgent.Server</RootNamespace>
+	  <AssemblyName>PeakLogix.App1.AdAgent.Server</AssemblyName>
+	  <RootNamespace>PeakLogix.App1.AdAgent.Server</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

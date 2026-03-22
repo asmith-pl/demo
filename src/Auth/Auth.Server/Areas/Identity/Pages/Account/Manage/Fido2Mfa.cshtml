@@ -1,4 +1,4 @@
-﻿@page "/Fido2Mfa/{handler?}"
+@page "/Fido2Mfa/{handler?}"
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
@@ -9,7 +9,7 @@
         return Xsrf.GetAndStoreTokens(this.HttpContext).RequestToken;
     }
 }
-@model PeakLogix.LogixPro.Auth.Server.Areas.Identity.Pages.Account.Manage.MfaModel
+@model PeakLogix.App1.Auth.Server.Areas.Identity.Pages.Account.Manage.MfaModel
 @{
     Layout = "_Layout.cshtml";
     ViewData["Title"] = "Two-factor authentication (2FA)";

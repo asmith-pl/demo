@@ -1,4 +1,4 @@
-﻿namespace LogixPro.LogixPro.Portal.Server.Models;
+﻿namespace App1.App1.Portal.Server.Models;
 
 public class ClaimValue
 {
