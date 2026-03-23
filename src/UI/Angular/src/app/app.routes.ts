@@ -9,10 +9,10 @@ import { LayoutComponent } from 'app/layout/layout.component';
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const appRoutes: Route[] = [
 
-    // Redirect empty path to '/home' (public landing page)
-    { path: '', pathMatch: 'full', redirectTo: 'dashboards/project' },
+    // Redirect empty path to '/admin/services'
+    { path: '', pathMatch: 'full', redirectTo: 'admin/services' },
 
-    // Redirect signed-in user to the '/dashboards/project'
+    // Redirect signed-in user to '/admin/services'
     //
     // After the user signs in, the sign-in page will redirect the user to the 'signed-in-redirect'
     // path. Below is another redirection for that path to redirect the user to the desired
@@ -20,7 +20,7 @@ export const appRoutes: Route[] = [
     {
         path: 'signed-in-redirect',
         pathMatch : 'full',
-        redirectTo: 'dashboards/project'
+        redirectTo: 'admin/services'
     },
 
     // Auth routes for guests
