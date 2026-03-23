@@ -35,7 +35,8 @@ builder.ConfigureOpenTelemetry();
 
 // MVC + Razor Pages
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+	.AddRazorRuntimeCompilation();
 
 // Tenant context (scoped per request, set by TenantResolutionMiddleware)
 builder.Services.AddScoped<ITenantContext, TenantContext>();

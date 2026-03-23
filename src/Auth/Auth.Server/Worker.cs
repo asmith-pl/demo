@@ -46,13 +46,13 @@ namespace PeakLogix.App1.Auth.Server
                     .Select(t => t.Slug)
                     .ToListAsync();
 
-                var redirectUris = new HashSet<Uri> { new("https://localhost:5001/signin-oidc") };
-                var postLogoutUris = new HashSet<Uri> { new("https://localhost:5001/signout-callback-oidc") };
+                var redirectUris = new HashSet<Uri> { new("https://logixpro.local:5001/signin-oidc") };
+                var postLogoutUris = new HashSet<Uri> { new("https://logixpro.local:5001/signout-callback-oidc") };
 
                 foreach (var slug in tenantSlugs)
                 {
-                    redirectUris.Add(new Uri($"https://{slug}.localhost:5001/signin-oidc"));
-                    postLogoutUris.Add(new Uri($"https://{slug}.localhost:5001/signout-callback-oidc"));
+                    redirectUris.Add(new Uri($"https://{slug}.logixpro.local:5001/signin-oidc"));
+                    postLogoutUris.Add(new Uri($"https://{slug}.logixpro.local:5001/signout-callback-oidc"));
                 }
 
                 // Portal BFF (confidential client, authorization code + refresh token)

@@ -95,7 +95,7 @@
                         "sslKey": "certs/dev_localhost.key",
                         "sslCert": "certs/dev_localhost.pem",
                         "port": 4201,
-                        "host": "localhost",
+                        "host": "logixpro.local",
                         "hmr": true
                     },
                     "configurations": {

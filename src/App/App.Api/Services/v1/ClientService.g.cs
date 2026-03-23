@@ -195,6 +195,9 @@ public partial class ClientService : IClientService
 	{
 		var dbQuery = _db.Client.AsNoTracking();
 	
+		// Filter out sys admin client
+		dbQuery = dbQuery.Where(c => c.Key != "sysadmin");
+
 		// Sorting
 		if (!string.IsNullOrWhiteSpace(request.SortBy))
 			dbQuery = this.AddSorting(ref dbQuery, request);
