@@ -7,22 +7,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Folder Name="/design/" />
-  <Folder Name="/docs/">
-    <File Path="docs/adagent_auth.json" />
-    <File Path="docs/adagent_config.json" />
-    <File Path="docs/AuthTest.gmdl" />
-    <File Path="docs/AuthTest.gmdl.diagram" />
-    <File Path="docs/AzureDeploymentGuide.md" />
-  </Folder>
-  <Folder Name="/scripts/">
-    <File Path="scripts/App1_InsertData.sql" />
-    <File Path="scripts/App1_Working1.sql" />
-    <File Path="scripts/Auth_CreateSchema.sql" />
-    <File Path="scripts/Auth_Wk1.sql" />
-    <File Path="scripts/EF Commands.txt" />
-    <File Path="scripts/RunAngular.bat" />
-  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/AdAgent/">
     <Project Path="src/AdAgent/AdAgent.Api/AdAgent.Api.csproj" Id="a728c647-b257-43e1-a860-96085900fa52">
@@ -65,11 +49,6 @@
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
   </Folder>
-  <Folder Name="/src/Functions/">
-    <Project Path="src/Functions/App1.Functions/App1.Functions.csproj">
-      <BuildType Solution="Dbg-Ext|*" Project="Release" />
-    </Project>
-  </Folder>
   <Folder Name="/src/Integration/">
     <Project Path="src/Integration/Integration.Api/Integration.Api.csproj" />
     <Project Path="src/Integration/Integration.Server/Integration.Server.csproj" />
@@ -83,20 +62,6 @@
       <Platform Project="AnyCPU" />
       <Build />
       <Deploy />
-    </Project>
-  </Folder>
-  <Folder Name="/tests/">
-    <Project Path="tests/Tests.Common/Tests.Common.csproj">
-      <BuildType Solution="Dbg-Ext|*" Project="Release" />
-      <Build Solution="Debug|Any CPU" Project="false" />
-    </Project>
-    <Project Path="tests/Tests.Integration/Tests.Integration.csproj">
-      <BuildType Solution="Dbg-Ext|*" Project="Release" />
-      <Build Solution="Debug|Any CPU" Project="false" />
-    </Project>
-    <Project Path="tests/Tests.Unit/Tests.Unit.csproj" Id="77c35258-707f-4b22-a708-b6f4d788c639">
-      <BuildType Solution="Dbg-Ext|*" Project="Release" />
-      <Build Solution="Debug|Any CPU" Project="false" />
     </Project>
   </Folder>
 </Solution>

@@ -6,18 +6,13 @@ namespace PeakLogix.App1.Common.Data;
 
 public sealed class AuditingInterceptor(ICurrentUserService currentUser) : SaveChangesInterceptor
 {
-	public override InterceptionResult<int> SavingChanges(
-		DbContextEventData eventData,
-		InterceptionResult<int> result)
+	public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
 	{
 		ApplyAuditValues(eventData.Context);
 		return result;
 	}
 
-	public override ValueTask<InterceptionResult<int>> SavingChangesAsync(
-		DbContextEventData eventData,
-		InterceptionResult<int> result,
-		CancellationToken cancellationToken = default)
+	public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
 	{
 		ApplyAuditValues(eventData.Context);
 		return ValueTask.FromResult(result);

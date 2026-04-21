@@ -1,0 +1,31 @@
+
+NOTES
+--------
+
+AD
+-------
+Domain: ADCORP1
+Forest: adcorp1.local
+
+
+Users
+-------
+Administrator
+User1
+User2
+AdAgentService
+
+All passwords: Toto;55
+
+
+AD Agent
+------------
+
+These files:
+adagent_auth.json
+adagent_config.json
+
+Need to be installed to the following path on the machine that the AD Agent is running on:
+C:\ProgramData\PeakLogix\AD Agent
+
+These are configuration settings and are for dev/demo purposes only, we'll need to figure out a better way for production.

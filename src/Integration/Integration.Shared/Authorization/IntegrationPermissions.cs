@@ -3,6 +3,7 @@ namespace PeakLogix.App1.Integration.Shared.Authorization;
 public static class IntegrationPermissions
 {
     public const string Read = "integration:read";
+    public const string Loadfiles = "integration:loadfiles";
     public const string Write = "integration:write";
     public const string Admin = "integration:admin";
 
