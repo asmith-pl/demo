@@ -60,6 +60,8 @@ public abstract class ApiClientBase : IApiClientBase
 		return response.Data!;
 	}
 
+	#endregion
+
 	#region Post
 
 	protected async Task PostAsync(string uri, object payload)
@@ -196,14 +198,4 @@ public abstract class ApiClientBase : IApiClientBase
 	}
 
 	#endregion
-
-	#endregion
-
-	public enum MethodType
-	{
-		Post,
-		Delete,
-		Put,
-		Patch
-	}
 }

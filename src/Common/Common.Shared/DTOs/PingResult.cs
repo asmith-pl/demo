@@ -1,3 +1,4 @@
+
 namespace PeakLogix.PickPro.Common.Shared.DTOs;
 
 public class PingResult
