@@ -4,8 +4,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>PeakLogix.App1.Auth.Shared</AssemblyName>
-    <RootNamespace>PeakLogix.App1.Auth.Shared</RootNamespace>
+    <AssemblyName>PeakLogix.PickPro.Auth.Shared</AssemblyName>
+    <RootNamespace>PeakLogix.PickPro.Auth.Shared</RootNamespace>
     <Configurations>Debug;Release;Dbg-Ext</Configurations>
   </PropertyGroup>
 

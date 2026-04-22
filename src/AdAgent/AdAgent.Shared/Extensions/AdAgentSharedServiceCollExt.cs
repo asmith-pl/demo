@@ -1,9 +1,9 @@
-using PeakLogix.App1.AdAgent.Shared.ApiClients;
-using PeakLogix.App1.Common.Shared.Config;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.AdAgent.Shared.ApiClients;
+using PeakLogix.PickPro.Common.Shared.Config;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.App1.AdAgent.Shared.Extensions;
+namespace PeakLogix.PickPro.AdAgent.Shared.Extensions;
 
 public static partial class AdAgentSharedServiceCollExt
 {

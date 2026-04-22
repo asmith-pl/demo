@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Auth.Api.Config;
+namespace PeakLogix.PickPro.Auth.Api.Config;
 
 public class BrandImgOptions
 {

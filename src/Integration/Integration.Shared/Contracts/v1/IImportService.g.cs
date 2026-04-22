@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using PeakLogix.App1.Common.Shared.Exceptions;
-using PeakLogix.App1.Common.Shared.Requests;
+using PeakLogix.PickPro.Common.Shared.Exceptions;
+using PeakLogix.PickPro.Common.Shared.Requests;
 
-namespace PeakLogix.App1.App.Shared.Contracts.v1;
+namespace PeakLogix.PickPro.App.Shared.Contracts.v1;
 
 public interface IImportService
 {

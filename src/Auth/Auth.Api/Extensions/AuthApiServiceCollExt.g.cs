@@ -1,12 +1,12 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
-using PeakLogix.App1.Common.Api.Filters;
-using sv1 = PeakLogix.App1.Auth.Api.Services.v1;
-using cv1 = PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Endpoints.v1;
+using PeakLogix.PickPro.Common.Api.Filters;
+using sv1 = PeakLogix.PickPro.Auth.Api.Services.v1;
+using cv1 = PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Endpoints.v1;
 
-namespace PeakLogix.App1.Auth.Api.Extensions;
+namespace PeakLogix.PickPro.Auth.Api.Extensions;
 
 public static partial class AuthApiServiceCollExt
 {

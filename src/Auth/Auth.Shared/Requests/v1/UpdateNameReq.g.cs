@@ -2,7 +2,7 @@
 // This file was auto-generated on 2/27/2026 4:53 PM. Any changes made to it will be lost.
 //------------------------------------------------------------------------------------------------------------
 
-namespace PeakLogix.App1.Auth.Shared.Requests.v1;
+namespace PeakLogix.PickPro.Auth.Shared.Requests.v1;
 
 public class UpdateNameReq
 {

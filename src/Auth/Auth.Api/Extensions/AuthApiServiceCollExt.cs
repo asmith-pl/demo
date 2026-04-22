@@ -1,21 +1,21 @@
-using PeakLogix.App1.Auth.Api.Config;
-using PeakLogix.App1.Auth.Api.Endpoints;
-using PeakLogix.App1.Auth.Api.Repositories;
-using PeakLogix.App1.Auth.Api.Services;
-using PeakLogix.App1.Auth.Api.Services.v1;
-using PeakLogix.App1.Auth.Endpoints.v1;
-using PeakLogix.App1.Common.Api.Extensions;
-using PeakLogix.App1.Common.Api.Filters;
-using PeakLogix.App1.Auth.Shared.Contracts;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.Auth.Api.Config;
+using PeakLogix.PickPro.Auth.Api.Endpoints;
+using PeakLogix.PickPro.Auth.Api.Repositories;
+using PeakLogix.PickPro.Auth.Api.Services;
+using PeakLogix.PickPro.Auth.Api.Services.v1;
+using PeakLogix.PickPro.Auth.Endpoints.v1;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Api.Filters;
+using PeakLogix.PickPro.Auth.Shared.Contracts;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
-namespace PeakLogix.App1.Auth.Api.Extensions;
+namespace PeakLogix.PickPro.Auth.Api.Extensions;
 
 public static partial class AuthApiServiceCollExt
 {

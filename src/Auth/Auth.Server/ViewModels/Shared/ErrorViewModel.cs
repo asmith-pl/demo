@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PeakLogix.App1.Auth.Server.ViewModels.Shared;
+namespace PeakLogix.PickPro.Auth.Server.ViewModels.Shared;
 
 public class ErrorViewModel
 {

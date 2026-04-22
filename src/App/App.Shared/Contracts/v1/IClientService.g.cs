@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using PeakLogix.App1.App.Shared.Dtos;
-using PeakLogix.App1.Common.Shared.Exceptions;
-using PeakLogix.App1.App.Shared.Contracts.v1;
-using PeakLogix.App1.App.Shared.Requests.v1;
-using PeakLogix.App1.Common.Shared.Extensions;
-using PeakLogix.App1.Common.Shared.DTOs;
-using PeakLogix.App1.Common.Shared.Requests;
+using PeakLogix.PickPro.App.Shared.Dtos;
+using PeakLogix.PickPro.Common.Shared.Exceptions;
+using PeakLogix.PickPro.App.Shared.Contracts.v1;
+using PeakLogix.PickPro.App.Shared.Requests.v1;
+using PeakLogix.PickPro.Common.Shared.Extensions;
+using PeakLogix.PickPro.Common.Shared.DTOs;
+using PeakLogix.PickPro.Common.Shared.Requests;
 
-namespace PeakLogix.App1.App.Shared.Contracts.v1;
+namespace PeakLogix.PickPro.App.Shared.Contracts.v1;
 
 public interface IClientService
 {

@@ -1,5 +1,5 @@
-﻿
-namespace App1.Auth.Api;
+
+namespace PickPro.Auth.Api;
 
 public static class AuthConstants
 {

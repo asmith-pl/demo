@@ -1,7 +1,7 @@
 using System;
-using PeakLogix.App1.Common.Shared.Requests;
+using PeakLogix.PickPro.Common.Shared.Requests;
 
-namespace PeakLogix.App1.App.Shared.Requests.v1;
+namespace PeakLogix.PickPro.App.Shared.Requests.v1;
 
 public class GetAllClientsReq : ISortingRequest
 {

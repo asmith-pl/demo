@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 
-namespace PeakLogix.App1.Common.Api.Authorization;
+namespace PeakLogix.PickPro.Common.Api.Authorization;
 
 public sealed class TestJwtAuthenticationHandler(
     IOptionsMonitor<AuthenticationSchemeOptions> options,

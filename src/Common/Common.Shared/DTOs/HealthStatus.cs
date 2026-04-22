@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Common.Shared.DTOs;
+namespace PeakLogix.PickPro.Common.Shared.DTOs;
 
 public class HealthStatus
 {

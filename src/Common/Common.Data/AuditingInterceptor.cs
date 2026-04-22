@@ -1,8 +1,8 @@
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace PeakLogix.App1.Common.Data;
+namespace PeakLogix.PickPro.Common.Data;
 
 public sealed class AuditingInterceptor(ICurrentUserService currentUser) : SaveChangesInterceptor
 {

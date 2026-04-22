@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PeakLogix.App1.Auth.Data.Migrations
+namespace PeakLogix.PickPro.Auth.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddTenantIdToRoles : Migration

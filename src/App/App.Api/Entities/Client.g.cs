@@ -1,7 +1,7 @@
-using PeakLogix.App1.App.Shared.Dtos;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.App.Shared.Dtos;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 
-namespace PeakLogix.App1.App.Api.Entities;
+namespace PeakLogix.PickPro.App.Api.Entities;
 
 public partial class Client : IAuditable
 {

@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Auth.Shared.Contracts;
+namespace PeakLogix.PickPro.Auth.Shared.Contracts;
 
 public interface IBrandImgRepository
 {

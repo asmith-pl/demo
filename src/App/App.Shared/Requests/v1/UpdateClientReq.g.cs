@@ -1,5 +1,5 @@
 
-namespace PeakLogix.App1.App.Shared.Requests.v1;
+namespace PeakLogix.PickPro.App.Shared.Requests.v1;
 
 public class UpdateClientReq
 {

@@ -3,17 +3,17 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using PeakLogix.App1.Auth.Data.Entities;
-using PeakLogix.App1.Auth.Api.Services.v1;
-using PeakLogix.App1.Common.Api.Extensions;
-using PeakLogix.App1.Common.Api.Filters;
-using PeakLogix.App1.Common.Shared.Requests;
-using PeakLogix.App1.Common.Shared.DTOs;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Shared.DTOs;
-using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.PickPro.Auth.Data.Entities;
+using PeakLogix.PickPro.Auth.Api.Services.v1;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Api.Filters;
+using PeakLogix.PickPro.Common.Shared.Requests;
+using PeakLogix.PickPro.Common.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Requests.v1;
 
-namespace PeakLogix.App1.Auth.Endpoints.v1;
+namespace PeakLogix.PickPro.Auth.Endpoints.v1;
 
 public static class TenantEndpoints
 {

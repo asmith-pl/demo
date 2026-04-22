@@ -1,9 +1,9 @@
-using PeakLogix.App1.Common.Api.Authorization;
+using PeakLogix.PickPro.Common.Api.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.App1.Common.Api.Extensions;
+namespace PeakLogix.PickPro.Common.Api.Extensions;
 
 public static class AuthorizationExtensions
 {

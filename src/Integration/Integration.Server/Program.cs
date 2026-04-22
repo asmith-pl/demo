@@ -1,8 +1,8 @@
-using PeakLogix.App1.Common.Api.Authorization;
-using PeakLogix.App1.Common.Api.Extensions;
-using PeakLogix.App1.Common.Server;
-using PeakLogix.App1.Integration.Api.Extensions;
-using PeakLogix.App1.Integration.Shared.Authorization;
+using PeakLogix.PickPro.Common.Api.Authorization;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Server;
+using PeakLogix.PickPro.Integration.Api.Extensions;
+using PeakLogix.PickPro.Integration.Shared.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 

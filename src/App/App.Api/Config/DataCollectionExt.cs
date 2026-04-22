@@ -1,8 +1,8 @@
-//using PeakLogix.App1.App.Api.Context;
+//using PeakLogix.PickPro.App.Api.Context;
 //using Microsoft.EntityFrameworkCore;
 //using Microsoft.Extensions.DependencyInjection;
 
-//namespace PeakLogix.App1.App.Api.Config;
+//namespace PeakLogix.PickPro.App.Api.Config;
 
 //public static partial class DataCollectionExt
 //{

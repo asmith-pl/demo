@@ -1,5 +1,5 @@
 
-namespace PeakLogix.App1.Common.Shared.Contracts;
+namespace PeakLogix.PickPro.Common.Shared.Contracts;
 
 public interface IAuditable
 {

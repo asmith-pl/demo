@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PeakLogix.App1.Auth.Data.Context;
+using PeakLogix.PickPro.Auth.Data.Context;
 
 #nullable disable
 
-namespace PeakLogix.App1.Auth.Data.Migrations
+namespace PeakLogix.PickPro.Auth.Data.Migrations
 {
     [DbContext(typeof(AuthDbContext))]
     [Migration("20251129153838_UpdateNet10")]

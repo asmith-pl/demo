@@ -1,9 +1,9 @@
-//using PeakLogix.App1.Auth.Data;
-//using PeakLogix.App1.Auth.Data.Context;
-//using PeakLogix.App1.Auth.Data.Fido2;
+//using PeakLogix.PickPro.Auth.Data;
+//using PeakLogix.PickPro.Auth.Data.Context;
+//using PeakLogix.PickPro.Auth.Data.Fido2;
 //using Microsoft.EntityFrameworkCore;
 
-//namespace PeakLogix.App1.Auth.Server.Data;
+//namespace PeakLogix.PickPro.Auth.Server.Data;
 
 ///// <summary>
 ///// Auth.Server-specific DbContext that extends AuthDbContext with

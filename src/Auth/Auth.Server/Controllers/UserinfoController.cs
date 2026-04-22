@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OpenIddict.Abstractions;
 using OpenIddict.Server.AspNetCore;
-using PeakLogix.App1.Auth.Data;
+using PeakLogix.PickPro.Auth.Data;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace PeakLogix.App1.Auth.Server.Controllers;
+namespace PeakLogix.PickPro.Auth.Server.Controllers;
 
 public class UserinfoController : Controller
 {

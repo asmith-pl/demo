@@ -1,9 +1,9 @@
-using PeakLogix.App1.Common.Shared.ApiClients;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Shared.DTOs;
-using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.PickPro.Common.Shared.ApiClients;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Requests.v1;
 
-namespace PeakLogix.App1.Auth.Shared.ApiClients.v1;
+namespace PeakLogix.PickPro.Auth.Shared.ApiClients.v1;
 
 public partial class ScopeApiClient : ApiClientBase, IScopeService
 {

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using PeakLogix.App1.Auth.Data.Entities;
+using PeakLogix.PickPro.Auth.Data.Entities;
 
-namespace PeakLogix.App1.Auth.Data.Context;
+namespace PeakLogix.PickPro.Auth.Data.Context;
 
 public partial class AuthDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string,
 	IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>,

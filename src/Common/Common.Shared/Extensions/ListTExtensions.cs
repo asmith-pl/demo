@@ -1,6 +1,6 @@
-using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 
-namespace PeakLogix.App1.Common.Shared.Extensions;
+namespace PeakLogix.PickPro.Common.Shared.Extensions;
 
 public static class ListTExtensions
 {

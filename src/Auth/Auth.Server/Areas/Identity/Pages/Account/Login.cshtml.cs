@@ -2,19 +2,19 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
-using PeakLogix.App1.AdAgent.Shared.ApiClients.v1;
-using PeakLogix.App1.AdAgent.Shared.DTOs;
-using PeakLogix.App1.Auth.Data;
-using PeakLogix.App1.Auth.Data.Fido2;
-using PeakLogix.App1.Auth.Server.Services;
-using PeakLogix.App1.Auth.Shared.DTOs;
+using PeakLogix.PickPro.AdAgent.Shared.ApiClients.v1;
+using PeakLogix.PickPro.AdAgent.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Data;
+using PeakLogix.PickPro.Auth.Data.Fido2;
+using PeakLogix.PickPro.Auth.Server.Services;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 
-namespace PeakLogix.App1.Auth.Server.Areas.Identity.Pages.Account
+namespace PeakLogix.PickPro.Auth.Server.Areas.Identity.Pages.Account
 {
 	public class LoginModel : PageModel
 	{

@@ -1,7 +1,7 @@
-using PeakLogix.App1.Auth.Shared.DTOs;
-using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Requests.v1;
 
-namespace PeakLogix.App1.App.Api.Contracts.v1;
+namespace PeakLogix.PickPro.App.Api.Contracts.v1;
 
 public interface IClientAuthService
 {

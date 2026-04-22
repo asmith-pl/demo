@@ -1,11 +1,11 @@
-using PeakLogix.App1.App.Api.Contracts.v1;
-using PeakLogix.App1.App.Api.Endpoints;
-using PeakLogix.App1.App.Api.Services;
-using PeakLogix.App1.App.Api.Services.v1;
-using PeakLogix.App1.App.Endpoints.v1;
-using PeakLogix.App1.Auth.Shared.ApiClients.v1;
-using PeakLogix.App1.Common.Api.Extensions;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.App.Api.Contracts.v1;
+using PeakLogix.PickPro.App.Api.Endpoints;
+using PeakLogix.PickPro.App.Api.Services;
+using PeakLogix.PickPro.App.Api.Services.v1;
+using PeakLogix.PickPro.App.Endpoints.v1;
+using PeakLogix.PickPro.Auth.Shared.ApiClients.v1;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
-namespace PeakLogix.App1.App.Api.Extensions;
+namespace PeakLogix.PickPro.App.Api.Extensions;
 
 public static partial class AppApiServiceCollExt
 {

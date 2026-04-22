@@ -1,7 +1,7 @@
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Http;
 
-namespace PeakLogix.App1.Auth.Shared.ApiClients.v1;
+namespace PeakLogix.PickPro.Auth.Shared.ApiClients.v1;
 
 public class TenantApiBearerTokenHandler(IHttpContextAccessor httpContextAccessor) : DelegatingHandler
 {

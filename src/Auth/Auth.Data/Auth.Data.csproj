@@ -4,8 +4,8 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<AssemblyName>PeakLogix.App1.Auth.Data</AssemblyName>
-		<RootNamespace>PeakLogix.App1.Auth.Data</RootNamespace>
+		<AssemblyName>PeakLogix.PickPro.Auth.Data</AssemblyName>
+		<RootNamespace>PeakLogix.PickPro.Auth.Data</RootNamespace>
 		<Configurations>Debug;Release;Dbg-Ext</Configurations>
 	</PropertyGroup>
 

@@ -1,11 +1,11 @@
 using Microsoft.Extensions.Logging;
 using OpenIddict.Abstractions;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Shared.DTOs;
-using PeakLogix.App1.Auth.Shared.Requests.v1;
-using PeakLogix.App1.Common.Shared.Exceptions;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Requests.v1;
+using PeakLogix.PickPro.Common.Shared.Exceptions;
 
-namespace PeakLogix.App1.Auth.Api.Services.v1;
+namespace PeakLogix.PickPro.Auth.Api.Services.v1;
 
 public class OidcAppService(IOpenIddictApplicationManager appManager, ILogger<OidcAppService> logger) : IOidcAppService
 {

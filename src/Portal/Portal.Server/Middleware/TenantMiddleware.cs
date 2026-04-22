@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Portal.Server.Middleware;
+namespace PeakLogix.PickPro.Portal.Server.Middleware;
 
 /// <summary>
 /// Extracts the tenant slug from the first subdomain of the request host

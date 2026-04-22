@@ -1,8 +1,8 @@
-using PeakLogix.App1.Common.Shared.Exceptions;
+using PeakLogix.PickPro.Common.Shared.Exceptions;
 using System.Net;
 using System.Text.Json.Serialization;
 
-namespace PeakLogix.App1.Common.Shared.DTOs;
+namespace PeakLogix.PickPro.Common.Shared.DTOs;
 
 /// <summary>
 /// Represents the outcome of an operation that can succeed (no value) or fail with an error.

@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace PeakLogix.App1.App.Api.Config;
+namespace PeakLogix.PickPro.App.Api.Config;
 
 public static class DataConfigBuilder
 {

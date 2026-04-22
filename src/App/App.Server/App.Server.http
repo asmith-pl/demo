@@ -1,6 +1,6 @@
-@App1.Server_HostAddress = http://localhost:5192
+@PickPro.Server_HostAddress = http://localhost:5192
 
-GET {{App1.Server_HostAddress}}/weatherforecast/
+GET {{PickPro.Server_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

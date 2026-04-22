@@ -1,5 +1,5 @@
-using PeakLogix.App1.Auth.Data;
-using PeakLogix.App1.Auth.Data.Fido2;
+using PeakLogix.PickPro.Auth.Data;
+using PeakLogix.PickPro.Auth.Data.Fido2;
 using Fido2NetLib;
 using Fido2NetLib.Objects;
 using Microsoft.AspNetCore.Identity;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 using System.Text;
 using static Fido2NetLib.Fido2;
 
-namespace PeakLogix.App1.Auth.Server.Fido2;
+namespace PeakLogix.PickPro.Auth.Server.Fido2;
 
 [Route("api/[controller]")]
 public class PwFido2RegisterController : Controller

@@ -1,4 +1,4 @@
-﻿namespace App1.App1.Portal.Server.Models;
+namespace PickPro.PickPro.Portal.Server.Models;
 
 public class ClaimValue
 {

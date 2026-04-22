@@ -4,8 +4,8 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<AssemblyName>PeakLogix.App1.App.Api</AssemblyName>
-		<RootNamespace>PeakLogix.App1.App.Api</RootNamespace>
+		<AssemblyName>PeakLogix.PickPro.App.Api</AssemblyName>
+		<RootNamespace>PeakLogix.PickPro.App.Api</RootNamespace>
 		<Configurations>Debug;Release;Dbg-Ext</Configurations>
 		<UserSecretsId>ba532265-0b6a-444e-8fe2-306559de634a</UserSecretsId>
 	</PropertyGroup>

@@ -1,9 +1,9 @@
-using PeakLogix.App1.App.Shared.ApiClients;
-using PeakLogix.App1.Common.Shared.Config;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.App.Shared.ApiClients;
+using PeakLogix.PickPro.Common.Shared.Config;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.App1.App.Shared.Extensions;
+namespace PeakLogix.PickPro.App.Shared.Extensions;
 
 public static partial class AppSharedServiceCollExt
 {

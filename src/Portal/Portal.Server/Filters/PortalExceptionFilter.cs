@@ -1,8 +1,8 @@
-//using App1.App1.Portal.Server;
-//using PeakLogix.App1.Common.Api.Filters;
-//using PeakLogix.App1.Portal.Server.Logging;
+//using PickPro.PickPro.Portal.Server;
+//using PeakLogix.PickPro.Common.Api.Filters;
+//using PeakLogix.PickPro.Portal.Server.Logging;
 
-//namespace PeakLogix.App1.Portal.Server.Filters;
+//namespace PeakLogix.PickPro.Portal.Server.Filters;
 
 //public class PortalExceptionFilter<T> : ApiExceptionFilter<T>
 //{

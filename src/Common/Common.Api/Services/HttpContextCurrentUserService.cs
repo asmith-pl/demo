@@ -1,8 +1,8 @@
 using System.Security.Claims;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.AspNetCore.Http;
 
-namespace PeakLogix.App1.Common.Api.Services;
+namespace PeakLogix.PickPro.Common.Api.Services;
 
 public sealed class HttpContextCurrentUserService(IHttpContextAccessor httpContextAccessor) : ICurrentUserService
 {

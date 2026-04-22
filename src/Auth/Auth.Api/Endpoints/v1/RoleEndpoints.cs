@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Shared.DTOs;
-using PeakLogix.App1.Auth.Shared.Requests.v1;
-using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.Requests.v1;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 
-namespace PeakLogix.App1.Auth.Endpoints.v1;
+namespace PeakLogix.PickPro.Auth.Endpoints.v1;
 
 public static class RoleEndpoints
 {

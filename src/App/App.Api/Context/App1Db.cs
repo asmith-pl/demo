@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using PeakLogix.App1.App.Api.Entities;
+using PeakLogix.PickPro.App.Api.Entities;
 
-namespace PeakLogix.App1.App.Api.Context;
+namespace PeakLogix.PickPro.App.Api.Context;
 
 public partial class App1Db : DbContext
 {

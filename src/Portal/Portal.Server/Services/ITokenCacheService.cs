@@ -1,6 +1,6 @@
-using PeakLogix.App1.Portal.Server.Models;
+using PeakLogix.PickPro.Portal.Server.Models;
 
-namespace PeakLogix.App1.Portal.Server.Services;
+namespace PeakLogix.PickPro.Portal.Server.Services;
 
 public interface ITokenCacheService
 {

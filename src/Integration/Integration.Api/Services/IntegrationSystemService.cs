@@ -1,8 +1,8 @@
-using PeakLogix.App1.Common.Shared.Contracts;
-using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.PickPro.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 using Microsoft.Extensions.Logging;
 
-namespace PeakLogix.App1.Integration.Api.Services;
+namespace PeakLogix.PickPro.Integration.Api.Services;
 
 public class IntegrationSystemService : ISystemService
 {

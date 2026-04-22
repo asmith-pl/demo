@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.App1.Common.Server;
+namespace PeakLogix.PickPro.Common.Server;
 
 /// <summary>
 /// Common extensions for API server hosts.

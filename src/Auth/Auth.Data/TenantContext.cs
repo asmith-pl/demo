@@ -1,6 +1,6 @@
-using PeakLogix.App1.Auth.Data.Entities;
+using PeakLogix.PickPro.Auth.Data.Entities;
 
-namespace PeakLogix.App1.Auth.Data;
+namespace PeakLogix.PickPro.Auth.Data;
 
 public interface ITenantContext
 {

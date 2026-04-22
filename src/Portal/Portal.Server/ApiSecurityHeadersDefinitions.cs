@@ -1,4 +1,4 @@
-﻿namespace App1.App1.Portal.Server;
+namespace PickPro.PickPro.Portal.Server;
 
 public static class ApiSecurityHeadersDefinitions
 {

@@ -1,5 +1,5 @@
 
-namespace PeakLogix.App1.Common.Shared
+namespace PeakLogix.PickPro.Common.Shared
 {
     public class GlobalConstants
     {

@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Common.Api.Authorization;
+namespace PeakLogix.PickPro.Common.Api.Authorization;
 
 /// <summary>
 /// Manages permission hierarchies registered by each service module.

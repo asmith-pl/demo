@@ -1,5 +1,5 @@
 // src/Auth/Auth.Shared/Authorization/AuthPermissions.cs
-namespace PeakLogix.App1.Auth.Shared.Authorization;
+namespace PeakLogix.PickPro.Auth.Shared.Authorization;
 
 public static class AuthPermissions
 {

@@ -4,8 +4,8 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<AssemblyName>PeakLogix.App1.Common.Server</AssemblyName>
-		<RootNamespace>PeakLogix.App1.Common.Server</RootNamespace>
+		<AssemblyName>PeakLogix.PickPro.Common.Server</AssemblyName>
+		<RootNamespace>PeakLogix.PickPro.Common.Server</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

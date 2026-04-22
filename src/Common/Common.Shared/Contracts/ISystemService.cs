@@ -1,6 +1,6 @@
-using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 
-namespace PeakLogix.App1.Common.Shared.Contracts;
+namespace PeakLogix.PickPro.Common.Shared.Contracts;
 
 public interface ISystemService
 {

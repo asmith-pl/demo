@@ -1,8 +1,8 @@
-using PeakLogix.App1.Common.Api.Services;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Api.Services;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.App1.Common.Api.Extensions;
+namespace PeakLogix.PickPro.Common.Api.Extensions;
 
 public static class CurrentUserServiceCollectionExtensions
 {

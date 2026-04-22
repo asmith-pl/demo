@@ -1,11 +1,11 @@
-using PeakLogix.App1.Auth.Shared.ApiClients;
-using PeakLogix.App1.Auth.Shared.ApiClients.v1;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Common.Shared.Config;
-using PeakLogix.App1.Common.Shared.Contracts;
+using PeakLogix.PickPro.Auth.Shared.ApiClients;
+using PeakLogix.PickPro.Auth.Shared.ApiClients.v1;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Common.Shared.Config;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PeakLogix.App1.Auth.Shared.Extensions;
+namespace PeakLogix.PickPro.Auth.Shared.Extensions;
 
 public static partial class AuthSharedServiceCollExt
 {

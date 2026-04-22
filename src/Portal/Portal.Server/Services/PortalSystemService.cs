@@ -1,10 +1,10 @@
-using App1.App1.Portal.Server;
-using App1.App1.Portal.Server.Interfaces;
-using PeakLogix.App1.Common.Shared.DTOs;
-using PeakLogix.App1.Portal.Server.DTOs;
-using PeakLogix.App1.Portal.Server.Logging;
+using PickPro.PickPro.Portal.Server;
+using PickPro.PickPro.Portal.Server.Interfaces;
+using PeakLogix.PickPro.Common.Shared.DTOs;
+using PeakLogix.PickPro.Portal.Server.DTOs;
+using PeakLogix.PickPro.Portal.Server.Logging;
 
-namespace PeakLogix.App1.Portal.Server.Services;
+namespace PeakLogix.PickPro.Portal.Server.Services;
 
 public class PortalSystemService : IPortalSystemService
 {

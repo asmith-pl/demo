@@ -1,16 +1,16 @@
-using PeakLogix.App1.App.Shared.ApiClients.v1;
-using PeakLogix.App1.App.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Api.Extensions;
-using PeakLogix.App1.Auth.Data;
-using PeakLogix.App1.Auth.Data.Context;
-using PeakLogix.App1.Auth.Data.Fido2;
-using PeakLogix.App1.Auth.Server;
-using PeakLogix.App1.Auth.Server.Fido2;
-using PeakLogix.App1.Auth.Server.Services;
-using PeakLogix.App1.Auth.Shared.Authorization;
-using PeakLogix.App1.Common.Api.Authorization;
-using PeakLogix.App1.Common.Api.Extensions;
-using PeakLogix.App1.Common.Server;
+using PeakLogix.PickPro.App.Shared.ApiClients.v1;
+using PeakLogix.PickPro.App.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Api.Extensions;
+using PeakLogix.PickPro.Auth.Data;
+using PeakLogix.PickPro.Auth.Data.Context;
+using PeakLogix.PickPro.Auth.Data.Fido2;
+using PeakLogix.PickPro.Auth.Server;
+using PeakLogix.PickPro.Auth.Server.Fido2;
+using PeakLogix.PickPro.Auth.Server.Services;
+using PeakLogix.PickPro.Auth.Shared.Authorization;
+using PeakLogix.PickPro.Common.Api.Authorization;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Server;
 using Fido2NetLib;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -45,7 +45,7 @@ builder.Services.AddScoped<ITenantContext, TenantContext>();
 builder.Services.AddDbContext<AuthDbContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-		b => b.MigrationsAssembly("PeakLogix.App1.Auth.Data"));
+		b => b.MigrationsAssembly("PeakLogix.PickPro.Auth.Data"));
 	options.UseOpenIddict();
 });
 

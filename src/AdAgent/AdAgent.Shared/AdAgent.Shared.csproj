@@ -4,8 +4,8 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<AssemblyName>PeakLogix.App1.AdAgent.Shared</AssemblyName>
-		<RootNamespace>PeakLogix.App1.AdAgent.Shared</RootNamespace>
+		<AssemblyName>PeakLogix.PickPro.AdAgent.Shared</AssemblyName>
+		<RootNamespace>PeakLogix.PickPro.AdAgent.Shared</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

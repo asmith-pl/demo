@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PeakLogix.App1.Auth.Server.Controllers;
+namespace PeakLogix.PickPro.Auth.Server.Controllers;
 
 public class HomeController : Controller
 {

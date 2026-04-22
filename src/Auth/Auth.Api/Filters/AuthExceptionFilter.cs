@@ -1,7 +1,7 @@
-//using App1.Auth.Api;
-//using PeakLogix.App1.Auth.Api.Logging;
+//using PickPro.Auth.Api;
+//using PeakLogix.PickPro.Auth.Api.Logging;
 
-//namespace PeakLogix.App1.Auth.Api.Filters;
+//namespace PeakLogix.PickPro.Auth.Api.Filters;
 
 //public class ApiExceptionFilter<T> : Common.Api.Filters.ApiExceptionFilter<T>
 //{

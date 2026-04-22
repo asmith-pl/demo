@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using PeakLogix.App1.Auth.Shared.DTOs;
-using PeakLogix.App1.Common.Shared.Exceptions;
-using PeakLogix.App1.Auth.Shared.Contracts.v1;
-using PeakLogix.App1.Auth.Shared.Requests.v1;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Common.Shared.Exceptions;
+using PeakLogix.PickPro.Auth.Shared.Contracts.v1;
+using PeakLogix.PickPro.Auth.Shared.Requests.v1;
 
-namespace PeakLogix.App1.Auth.Shared.Contracts.v1;
+namespace PeakLogix.PickPro.Auth.Shared.Contracts.v1;
 
 public interface ITenantService
 {

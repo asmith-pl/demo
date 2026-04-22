@@ -1,6 +1,6 @@
-using PeakLogix.App1.App.Shared.Contracts.v1;
+using PeakLogix.PickPro.App.Shared.Contracts.v1;
 
-namespace PeakLogix.App1.Auth.Server.Services
+namespace PeakLogix.PickPro.Auth.Server.Services
 {
 	public interface IClientRouter
 	{

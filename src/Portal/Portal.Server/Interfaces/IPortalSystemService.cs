@@ -1,6 +1,6 @@
-using PeakLogix.App1.Portal.Server.DTOs;
+using PeakLogix.PickPro.Portal.Server.DTOs;
 
-namespace App1.App1.Portal.Server.Interfaces;
+namespace PickPro.PickPro.Portal.Server.Interfaces;
 
 public interface IPortalSystemService
 {

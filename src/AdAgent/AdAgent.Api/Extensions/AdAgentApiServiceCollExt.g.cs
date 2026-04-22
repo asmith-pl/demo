@@ -1,13 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
-using PeakLogix.App1.Common.Api.Filters;
-using sv1 = PeakLogix.App1.AdAgent.Api.Services.v1;
-using cv1 = PeakLogix.App1.AdAgent.Shared.Contracts.v1;
-using PeakLogix.App1.AdAgent.Api.Endpoints;
-using PeakLogix.App1.AdAgent.Api.Endpoints.v1;
+using PeakLogix.PickPro.Common.Api.Filters;
+using sv1 = PeakLogix.PickPro.AdAgent.Api.Services.v1;
+using cv1 = PeakLogix.PickPro.AdAgent.Shared.Contracts.v1;
+using PeakLogix.PickPro.AdAgent.Api.Endpoints;
+using PeakLogix.PickPro.AdAgent.Api.Endpoints.v1;
 
-namespace PeakLogix.App1.AdAgent.Api.Extensions;
+namespace PeakLogix.PickPro.AdAgent.Api.Extensions;
 
 public static partial class AdAgentApiServiceCollExt
 {

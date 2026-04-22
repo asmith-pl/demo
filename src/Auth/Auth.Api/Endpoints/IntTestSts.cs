@@ -8,7 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace PeakLogix.App1.Auth.Api.Endpoints;
+namespace PeakLogix.PickPro.Auth.Api.Endpoints;
 
 public record TestTokenRequest(
     string UserId,

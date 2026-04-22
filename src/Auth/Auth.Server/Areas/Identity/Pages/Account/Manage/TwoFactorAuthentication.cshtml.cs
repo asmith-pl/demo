@@ -5,9 +5,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using PeakLogix.App1.Auth.Data;
+using PeakLogix.PickPro.Auth.Data;
 
-namespace PeakLogix.App1.Auth.Server.Areas.Identity.Pages.Account.Manage
+namespace PeakLogix.PickPro.Auth.Server.Areas.Identity.Pages.Account.Manage
 {
     public class TwoFactorAuthenticationModel : PageModel
     {

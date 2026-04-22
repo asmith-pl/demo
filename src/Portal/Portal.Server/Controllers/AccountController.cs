@@ -1,6 +1,6 @@
-using PeakLogix.App1.Portal.Server.Services;
+using PeakLogix.PickPro.Portal.Server.Services;
 
-namespace App1.App1.Portal.Server.Controllers;
+namespace PickPro.PickPro.Portal.Server.Controllers;
 
 [Route("api/[controller]")]
 public class AccountController : ControllerBase

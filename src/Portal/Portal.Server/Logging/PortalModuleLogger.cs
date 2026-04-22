@@ -1,7 +1,7 @@
-using App1.App1.Portal.Server;
-using PeakLogix.App1.Common.Api.Logging;
+using PickPro.PickPro.Portal.Server;
+using PeakLogix.PickPro.Common.Api.Logging;
 
-namespace PeakLogix.App1.Portal.Server.Logging
+namespace PeakLogix.PickPro.Portal.Server.Logging
 {
 	public interface IPortalModuleLogger : IModuleLogger
 	{

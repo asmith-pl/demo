@@ -1,10 +1,10 @@
-using PeakLogix.App1.AdAgent.Api.Config;
-using PeakLogix.App1.AdAgent.Shared.Contracts.v1;
-using PeakLogix.App1.AdAgent.Shared.DTOs;
+using PeakLogix.PickPro.AdAgent.Api.Config;
+using PeakLogix.PickPro.AdAgent.Shared.Contracts.v1;
+using PeakLogix.PickPro.AdAgent.Shared.DTOs;
 using System.DirectoryServices.Protocols;
 using System.Net;
 
-namespace PeakLogix.App1.AdAgent.Api.Services.v1;
+namespace PeakLogix.PickPro.AdAgent.Api.Services.v1;
 
 public class AdService(AdAgentConfig _config) : IAdService
 {

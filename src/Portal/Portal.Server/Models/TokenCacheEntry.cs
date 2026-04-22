@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Portal.Server.Models;
+namespace PeakLogix.PickPro.Portal.Server.Models;
 
 public class TokenCacheEntry
 {

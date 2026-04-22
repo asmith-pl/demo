@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PeakLogix.App1.App.Api.Migrations
+namespace PeakLogix.PickPro.App.Api.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigration : Migration

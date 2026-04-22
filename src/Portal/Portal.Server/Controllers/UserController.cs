@@ -1,6 +1,6 @@
-﻿using App1.App1.Portal.Server.Models;
+using PickPro.PickPro.Portal.Server.Models;
 
-namespace App1.App1.Portal.Server.Controllers;
+namespace PickPro.PickPro.Portal.Server.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

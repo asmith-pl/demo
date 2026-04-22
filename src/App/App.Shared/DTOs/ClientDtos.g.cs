@@ -1,5 +1,5 @@
 
-namespace PeakLogix.App1.App.Shared.Dtos;
+namespace PeakLogix.PickPro.App.Shared.Dtos;
 
 public record ClientDto (
 	Guid Id,

@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PeakLogix.App1.App.Api.Config;
-using PeakLogix.App1.App.Api.Context;
-using PeakLogix.App1.Common.Data;
+using PeakLogix.PickPro.App.Api.Config;
+using PeakLogix.PickPro.App.Api.Context;
+using PeakLogix.PickPro.Common.Data;
 
-namespace PeakLogix.App1.App.Api.Extensions;
+namespace PeakLogix.PickPro.App.Api.Extensions;
 
 public static partial class AppApiServiceCollExt
 {

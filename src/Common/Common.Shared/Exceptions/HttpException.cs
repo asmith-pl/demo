@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace PeakLogix.App1.Common.Shared.Exceptions;
+namespace PeakLogix.PickPro.Common.Shared.Exceptions;
 
 public class HttpException : Exception
 {

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 
-namespace PeakLogix.App1.Common.Api.Authorization;
+namespace PeakLogix.PickPro.Common.Api.Authorization;
 
 public sealed class PermissionPolicyProvider : IAuthorizationPolicyProvider
 {

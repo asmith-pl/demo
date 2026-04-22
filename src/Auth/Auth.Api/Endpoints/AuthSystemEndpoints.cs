@@ -1,11 +1,11 @@
-using App1.Auth.Api;
-using PeakLogix.App1.Common.Shared.Contracts;
-using PeakLogix.App1.Common.Shared.DTOs;
+using PickPro.Auth.Api;
+using PeakLogix.PickPro.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace PeakLogix.App1.Auth.Api.Endpoints;
+namespace PeakLogix.PickPro.Auth.Api.Endpoints;
 
 public static class AuthSystemEndpoints
 {

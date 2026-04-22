@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using OpenTelemetry;
 
-namespace PeakLogix.App1.Common.Api.Extensions;
+namespace PeakLogix.PickPro.Common.Api.Extensions;
 
 /// <summary>
 /// Common extensions for resilience, health checks, and OpenTelemetry.

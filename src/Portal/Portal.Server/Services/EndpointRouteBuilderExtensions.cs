@@ -1,4 +1,4 @@
-namespace App1.App1.Portal.Server.Services;
+namespace PickPro.PickPro.Portal.Server.Services;
 
 public static class EndpointRouteBuilderExtensions
 {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace PeakLogix.App1.Auth.Data;
+namespace PeakLogix.PickPro.Auth.Data;
 
 public class ApplicationUser : IdentityUser
 {

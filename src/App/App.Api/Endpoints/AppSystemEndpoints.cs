@@ -1,12 +1,12 @@
-using PeakLogix.App1.Common.Shared.Contracts;
-using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.PickPro.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using System.Security.Claims;
 using System.Text;
 
-namespace PeakLogix.App1.App.Api.Endpoints;
+namespace PeakLogix.PickPro.App.Api.Endpoints;
 
 public static class AppSystemEndpoints
 {

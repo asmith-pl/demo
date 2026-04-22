@@ -1,9 +1,9 @@
-using App1.Auth.Api;
-using PeakLogix.App1.Common.Shared.Contracts;
-using PeakLogix.App1.Common.Shared.DTOs;
+using PickPro.Auth.Api;
+using PeakLogix.PickPro.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 using Microsoft.Extensions.Logging;
 
-namespace PeakLogix.App1.Auth.Api.Services;
+namespace PeakLogix.PickPro.Auth.Api.Services;
 
 public class AuthSystemService : ISystemService
 {

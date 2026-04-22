@@ -1,9 +1,9 @@
-using PeakLogix.App1.Auth.Shared.Contracts;
+using PeakLogix.PickPro.Auth.Shared.Contracts;
 using Microsoft.Extensions.Logging;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats.Png;
 
-namespace PeakLogix.App1.Auth.Api.Services;
+namespace PeakLogix.PickPro.Auth.Api.Services;
 
 public class BrandImgService(IBrandImgRepository repository, ILogger<BrandImgService> logger)
 {

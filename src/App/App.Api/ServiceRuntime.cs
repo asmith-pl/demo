@@ -1,5 +1,5 @@
 
-namespace PeakLogix.App1.App.Api;
+namespace PeakLogix.PickPro.App.Api;
 
 public static class ServiceRuntime
 {

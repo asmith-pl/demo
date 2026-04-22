@@ -1,6 +1,6 @@
-using PeakLogix.App1.Auth.Shared.DTOs;
+using PeakLogix.PickPro.Auth.Shared.DTOs;
 
-namespace PeakLogix.App1.Auth.Shared.Requests.v1;
+namespace PeakLogix.PickPro.Auth.Shared.Requests.v1;
 
 public class CreateTenantReq
 {

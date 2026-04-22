@@ -1,5 +1,5 @@
 // src/App/App.Shared/Authorization/AppPermissions.cs
-namespace PeakLogix.App1.App.Shared.Authorization;
+namespace PeakLogix.PickPro.App.Shared.Authorization;
 
 public static class AppPermissions
 {

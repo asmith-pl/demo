@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PeakLogix.App1.Auth.Server.ViewModels.Authorization;
+namespace PeakLogix.PickPro.Auth.Server.ViewModels.Authorization;
 
 public class AuthorizeViewModel
 {

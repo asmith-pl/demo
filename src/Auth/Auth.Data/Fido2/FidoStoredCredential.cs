@@ -2,7 +2,7 @@ using Fido2NetLib.Objects;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
 
-namespace PeakLogix.App1.Auth.Data.Fido2;
+namespace PeakLogix.PickPro.Auth.Data.Fido2;
 
 /// <summary>
 /// Represents a WebAuthn credential.

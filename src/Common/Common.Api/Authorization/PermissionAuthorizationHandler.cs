@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 
-namespace PeakLogix.App1.Common.Api.Authorization;
+namespace PeakLogix.PickPro.Common.Api.Authorization;
 
 public sealed class PermissionAuthorizationHandler(PermissionRegistry permissionRegistry)
     : AuthorizationHandler<PermissionRequirement>

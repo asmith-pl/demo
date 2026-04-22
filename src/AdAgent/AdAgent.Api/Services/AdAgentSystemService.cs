@@ -1,9 +1,9 @@
-using PeakLogix.App1.AdAgent.Api;
-using PeakLogix.App1.Common.Shared.Contracts;
-using PeakLogix.App1.Common.Shared.DTOs;
+using PeakLogix.PickPro.AdAgent.Api;
+using PeakLogix.PickPro.Common.Shared.Contracts;
+using PeakLogix.PickPro.Common.Shared.DTOs;
 using Microsoft.Extensions.Logging;
 
-namespace PeakLogix.App1.App.Api.Services;
+namespace PeakLogix.PickPro.App.Api.Services;
 
 public class AdAgentSystemService : ISystemService
 {

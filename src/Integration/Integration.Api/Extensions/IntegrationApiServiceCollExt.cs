@@ -1,16 +1,16 @@
-using PeakLogix.App1.App.Api.Services.v1;
-using PeakLogix.App1.App.Endpoints.v1;
-using PeakLogix.App1.App.Shared.Contracts.v1;
-using PeakLogix.App1.Common.Api.Extensions;
-using PeakLogix.App1.Common.Shared.Contracts;
-using PeakLogix.App1.Integration.Api.Endpoints;
-using PeakLogix.App1.Integration.Api.Services;
+using PeakLogix.PickPro.App.Api.Services.v1;
+using PeakLogix.PickPro.App.Endpoints.v1;
+using PeakLogix.PickPro.App.Shared.Contracts.v1;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Shared.Contracts;
+using PeakLogix.PickPro.Integration.Api.Endpoints;
+using PeakLogix.PickPro.Integration.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
-namespace PeakLogix.App1.Integration.Api.Extensions;
+namespace PeakLogix.PickPro.Integration.Api.Extensions;
 
 public static partial class IntegrationApiServiceCollExt
 {

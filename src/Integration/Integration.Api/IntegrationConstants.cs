@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Integration.Api
+namespace PeakLogix.PickPro.Integration.Api
 {
     public class IntegrationConstants
     {

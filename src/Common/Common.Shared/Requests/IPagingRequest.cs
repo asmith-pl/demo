@@ -1,4 +1,4 @@
-namespace PeakLogix.App1.Common.Shared.Requests;
+namespace PeakLogix.PickPro.Common.Shared.Requests;
 
 public interface IPagingRequest
 {

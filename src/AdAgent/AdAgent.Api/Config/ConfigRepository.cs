@@ -1,7 +1,7 @@
-using PeakLogix.App1.Common.Shared;
+using PeakLogix.PickPro.Common.Shared;
 using System.Text.Json;
 
-namespace PeakLogix.App1.AdAgent.Api.Config;
+namespace PeakLogix.PickPro.AdAgent.Api.Config;
 
 public interface IConfigRepository
 {

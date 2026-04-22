@@ -1,5 +1,5 @@
 
-namespace PeakLogix.App1.Auth.Shared.DTOs;
+namespace PeakLogix.PickPro.Auth.Shared.DTOs;
 
 public enum AuthMode
 {
