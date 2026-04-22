@@ -54,9 +54,6 @@
     <Project Path="src/Integration/Integration.Server/Integration.Server.csproj" />
     <Project Path="src/Integration/Integration.Shared/Integration.Shared.csproj" />
   </Folder>
-  <Folder Name="/src/Portal/">
-    <Project Path="src/Portal/Portal.Server/Portal.Server.csproj" />
-  </Folder>
   <Folder Name="/src/UI/">
     <Project Path="src/UI/Angular/Angular.esproj">
       <Platform Project="AnyCPU" />

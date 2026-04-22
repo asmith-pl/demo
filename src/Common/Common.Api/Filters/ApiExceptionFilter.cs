@@ -1,4 +1,3 @@
-using PeakLogix.PickPro.Common.Api.Logging;
 using PeakLogix.PickPro.Common.Shared.DTOs;
 using PeakLogix.PickPro.Common.Shared.Exceptions;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +24,7 @@ public class ApiExceptionFilter<T> : IExceptionFilter
 	{
 		var sourceMethod = GetSourceMethodFromPath(context.HttpContext.Request.Path);
 
-		_logger.Error(context.Exception, _sourceClass, sourceMethod);
+		_logger.LogError(context.Exception, _sourceClass, sourceMethod);
 
 		var result = MapExceptionToResult(context.Exception);
 
