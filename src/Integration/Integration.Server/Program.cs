@@ -1,6 +1,5 @@
 using PeakLogix.PickPro.Common.Api.Authorization;
 using PeakLogix.PickPro.Common.Api.Extensions;
-using PeakLogix.PickPro.Common.Server;
 using PeakLogix.PickPro.Integration.Api.Extensions;
 using PeakLogix.PickPro.Integration.Shared.Authorization;
 
@@ -8,8 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults (telemetry, health checks, resilience)
 builder.AddServiceDefaults();
-
-//var dataConfig = DataConfigBuilder.Build(builder.Configuration);
 
 // Add services to the container
 if (builder.Environment.IsEnvironment("Testing"))

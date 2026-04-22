@@ -42,9 +42,6 @@
     <Project Path="src/Common/Common.Data/Common.Data.csproj" Id="6d6c5d2f-f270-487a-8318-cbd3542f1051">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
-    <Project Path="src/Common/Common.Server/Common.Server.csproj" Id="385ae6d4-4fa0-4e03-ab78-02df20eadc31">
-      <BuildType Solution="Dbg-Ext|*" Project="Release" />
-    </Project>
     <Project Path="src/Common/Common.Shared/Common.Shared.csproj" Id="781aeae7-6eb6-4529-ba1d-5c7de27ca2ab">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>

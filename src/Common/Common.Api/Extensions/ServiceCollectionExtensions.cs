@@ -1,10 +1,10 @@
-using Asp.Versioning;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Asp.Versioning;
 
-namespace PeakLogix.PickPro.Common.Server;
+namespace PeakLogix.PickPro.Common.Api.Extensions;
 
 /// <summary>
 /// Common extensions for API server hosts.

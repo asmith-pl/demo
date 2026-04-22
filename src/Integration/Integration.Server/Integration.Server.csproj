@@ -11,7 +11,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Common\Common.Server\Common.Server.csproj" />
 	  <ProjectReference Include="..\Integration.Api\Integration.Api.csproj" />
 	</ItemGroup>
 

@@ -1,6 +1,6 @@
-using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using PeakLogix.PickPro.Common.Shared.Contracts;
 
 namespace PeakLogix.PickPro.Common.Data;
 
