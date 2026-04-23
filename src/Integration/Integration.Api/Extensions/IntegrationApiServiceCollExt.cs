@@ -15,14 +15,12 @@ public static partial class IntegrationApiServiceCollExt
 	{
 		// Add system-level services
 		services.AddCurrentUserServices();
-		services.AddHealthChecks()
-			.AddCheck<HealthService>("Integration API Health");
-
-		// Register business logic services
-		services.AddScoped<IImportService, ImportService>();
-
-		// Add OpenAPI support
 		services.AddOpenApi();
+		services.AddHealthChecks()
+			.AddCheck<HealthService>("Integration Service Health");
+
+		// Register services
+		services.AddScoped<IImportService, ImportService>();
 
 		return services;
 	}

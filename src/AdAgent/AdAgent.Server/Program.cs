@@ -4,15 +4,13 @@ using PeakLogix.PickPro.Common.Api.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseWindowsService();
+
 // Add service defaults (telemetry, health checks, resilience)
 builder.AddServiceDefaults();
 
 // Add services to the container
-if (builder.Environment.IsEnvironment("Testing"))
-    builder.Services.AddTestJwtAuthentication();
-else
-    builder.Services.AddJwtBearerAuthentication(builder.Configuration);
-
+builder.Services.AddJwtBearerAuthentication(builder.Configuration);
 builder.Services.AddPermissionAuthorization();
 builder.Services.AddStandardApiVersioning();
 
@@ -20,7 +18,9 @@ var configRepo = new ConfigRepository();
 var adAgentConfig = configRepo.GetConfig();
 builder.Services.AddAdAgentApiServices(adAgentConfig);
 
+
 //----------------------------------------------------------------------------------------------
+
 
 var app = builder.Build();
 
@@ -32,6 +32,6 @@ app.MapDefaultEndpoints();
 
 // Enable API documentation in development
 if (app.Environment.IsDevelopment())
-    app.MapAdAgentApiDocumentation();
+	app.MapAdAgentApiDocumentation();
 
 app.Run();

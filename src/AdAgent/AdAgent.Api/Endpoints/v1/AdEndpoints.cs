@@ -1,10 +1,10 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using PeakLogix.PickPro.AdAgent.Shared.Contracts.v1;
 using PeakLogix.PickPro.AdAgent.Shared.DTOs;
 using PeakLogix.PickPro.AdAgent.Shared.Requests.v1;
 using PeakLogix.PickPro.Common.Shared.DTOs;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
 
 namespace PeakLogix.PickPro.AdAgent.Api.Endpoints.v1;
 

@@ -8,18 +8,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add service defaults (telemetry, health check (ping), resilience)
 builder.AddServiceDefaults();
 
-
 // Add services to the container
-if (builder.Environment.IsEnvironment("Testing"))
-	builder.Services.AddTestJwtAuthentication();
-else
-	builder.Services.AddJwtBearerAuthentication(builder.Configuration);
-
+builder.Services.AddJwtBearerAuthentication(builder.Configuration);
 builder.Services.AddPermissionAuthorization();
-builder.Services.AddIntegrationApiServices();
 builder.Services.AddStandardApiVersioning();
 
+builder.Services.AddIntegrationApiServices();
+
+
 //----------------------------------------------------------------------------------------------
+
 
 var app = builder.Build();
 
