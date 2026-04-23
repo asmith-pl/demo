@@ -5,8 +5,8 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<AssemblyName>PeakLogix.PickPro.AdAgent.Api</AssemblyName>
-		<RootNamespace>PeakLogix.PickPro.AdAgent.Api</RootNamespace>
+		<AssemblyName>PeakLogix.PickPro.RelayAgent.Api</AssemblyName>
+		<RootNamespace>PeakLogix.PickPro.RelayAgent.Api</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -20,7 +20,11 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Common\Common.Api\Common.Api.csproj" />
 	  <ProjectReference Include="..\..\Common\Common.Shared\Common.Shared.csproj" />
-	  <ProjectReference Include="..\AdAgent.Services\AdAgent.Services.csproj" />
+	  <ProjectReference Include="..\RelayAgent.Services\RelayAgent.Services.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Endpoints\v1\" />
 	</ItemGroup>
 
 </Project>

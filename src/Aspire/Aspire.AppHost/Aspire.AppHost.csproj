@@ -12,6 +12,7 @@
 	  <ProjectReference Include="..\..\Auth\Auth.Server\Auth.Server.csproj" />
 	  <ProjectReference Include="..\..\Integration\Integration.Api\Integration.Api.csproj" />
 	  <ProjectReference Include="..\..\AdAgent\AdAgent.Api\AdAgent.Api.csproj" />
+	  <ProjectReference Include="..\..\RelayAgent\RelayAgent.Api\RelayAgent.Api.csproj" />
 	</ItemGroup>
 
 </Project>

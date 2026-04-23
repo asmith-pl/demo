@@ -56,4 +56,18 @@
     </Project>
     <Project Path="src/Integration/Integration.Shared/Integration.Shared.csproj" />
   </Folder>
+  <Folder Name="/src/RelayAgent/">
+    <Project Path="src/RelayAgent/RelayAgent.Api/RelayAgent.Api.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/RelayAgent/RelayAgent.Repositories/RelayAgent.Repositories.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/RelayAgent/RelayAgent.Services/RelayAgent.Services.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/RelayAgent/RelayAgent.Shared/RelayAgent.Shared.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+  </Folder>
 </Solution>

@@ -2,14 +2,18 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 // Auth microservice
 var authServer = builder.AddProject<Projects.Auth_Server>("auth-server");
-//.WithHttpsEndpoint(port: 5002, name: "https");
 
 // Integration microservice
-var integrationServer = builder.AddProject<Projects.Integration_Api>("integration-api");
-//.WithHttpsEndpoint(port: 5005, name: "https");
+var integrationServer = builder.AddProject<Projects.Integration_Api>("integration-api")
+    .WithEndpoint("https", e => e.Port = 5004);
+
+// RelayAgent microservice
+var relayAgentServer = builder.AddProject<Projects.RelayAgent_Api>("relayagent-api")
+    .WithEndpoint("https", e => e.Port = 5005);
 
 // AdAgent microservice
-var adAgentServer = builder.AddProject<Projects.AdAgent_Api>("adagent-api");
+var adAgentServer = builder.AddProject<Projects.AdAgent_Api>("adagent-api")
+    .WithEndpoint("https", e => e.Port = 5006);
 
 try
 {

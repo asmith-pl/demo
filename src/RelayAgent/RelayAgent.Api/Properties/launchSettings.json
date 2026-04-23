@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json.schemastore.org/launchsettings.json",
 	"profiles": {
-		"Integration": {
+		"RelayAgent": {
 			"commandName": "Project",
 			"dotnetRunMessages": true,
 			"launchBrowser": false,
-			"applicationUrl": "https://localhost:7004",
-			"environmentVariables":{
+			"applicationUrl": "https://localhost:7005",
+			"environmentVariables": {
 				"ASPNETCORE_ENVIRONMENT": "Development"
 			}
 		}
