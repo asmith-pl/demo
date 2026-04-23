@@ -10,8 +10,4 @@
 		<UserSecretsId>7f3a1c9e-4b2d-4e8f-a015-6c3d9b2e7f4a</UserSecretsId>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\Integration.Api\Integration.Api.csproj" />
-	</ItemGroup>
-
 </Project>

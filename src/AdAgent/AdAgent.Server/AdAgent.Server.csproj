@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common.Server\Common.Server.csproj" />
     <ProjectReference Include="..\AdAgent.Api\AdAgent.Api.csproj" />
   </ItemGroup>
 

@@ -42,8 +42,15 @@
     </Project>
   </Folder>
   <Folder Name="/src/Integration/">
-    <Project Path="src/Integration/Integration.Api/Integration.Api.csproj" />
-    <Project Path="src/Integration/Integration.Server/Integration.Server.csproj" />
+    <Project Path="Integration.Services/Integration.Services.csproj" Id="7fb79822-ccad-4f58-b8b9-eb1ee7fcdf9f">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/Integration/Integration.Api/Integration.Api.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/Integration/Integration.Repositories/Integration.Repositories.csproj" Id="0f183082-91fc-4bf9-8578-9930d9ade8a1">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
     <Project Path="src/Integration/Integration.Shared/Integration.Shared.csproj" />
   </Folder>
 </Solution>

@@ -1,6 +1,3 @@
-//------------------------------------------------------------------------------------------------------------
-// This file was auto-generated on 3/1/2026 10:25 PM. Any changes made to it will be lost.
-//------------------------------------------------------------------------------------------------------------
 using PeakLogix.PickPro.App.Shared.Contracts.v1;
 using PeakLogix.PickPro.Common.Api.Extensions;
 using PeakLogix.PickPro.Common.Api.Filters;

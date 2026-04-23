@@ -5,7 +5,7 @@ var authServer = builder.AddProject<Projects.Auth_Server>("auth-server");
 //.WithHttpsEndpoint(port: 5002, name: "https");
 
 // Integration microservice
-var integrationServer = builder.AddProject<Projects.Integration_Server>("integration-server");
+var integrationServer = builder.AddProject<Projects.Integration_Api>("integration-api");
 //.WithHttpsEndpoint(port: 5005, name: "https");
 
 // AdAgent microservice
