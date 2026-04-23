@@ -14,8 +14,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\src\Integration\Integration.Repositories\Integration.Repositories.csproj" />
-	  <ProjectReference Include="..\src\Integration\Integration.Shared\Integration.Shared.csproj" />
+	  <ProjectReference Include="..\Integration.Shared\Integration.Shared.csproj" />
+	  <ProjectReference Include="..\Integration.Repositories\Integration.Repositories.csproj" />
 	</ItemGroup>
 
 </Project>

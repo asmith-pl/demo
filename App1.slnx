@@ -9,10 +9,13 @@
   </Configurations>
   <Folder Name="/src/" />
   <Folder Name="/src/AdAgent/">
-    <Project Path="src/AdAgent/AdAgent.Api/AdAgent.Api.csproj" Id="a728c647-b257-43e1-a860-96085900fa52">
+    <Project Path="src/AdAgent/AdAgent.Api/AdAgent.Api.csproj" Id="40bffb67-440b-4e4a-b96b-8adae3fa16d3">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
-    <Project Path="src/AdAgent/AdAgent.Server/AdAgent.Server.csproj">
+    <Project Path="src/AdAgent/AdAgent.Repositories/AdAgent.Repositories.csproj" Id="4117688f-b924-47a9-a8d4-56dd6eeb10be">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/AdAgent/AdAgent.Services/AdAgent.Services.csproj">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
     <Project Path="src/AdAgent/AdAgent.Shared/AdAgent.Shared.csproj" Id="7950dc12-2bdd-4785-b5ea-bf9d2ac0b964">
@@ -42,13 +45,13 @@
     </Project>
   </Folder>
   <Folder Name="/src/Integration/">
-    <Project Path="Integration.Services/Integration.Services.csproj" Id="7fb79822-ccad-4f58-b8b9-eb1ee7fcdf9f">
-      <BuildType Solution="Dbg-Ext|*" Project="Release" />
-    </Project>
     <Project Path="src/Integration/Integration.Api/Integration.Api.csproj">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
     <Project Path="src/Integration/Integration.Repositories/Integration.Repositories.csproj" Id="0f183082-91fc-4bf9-8578-9930d9ade8a1">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
+    <Project Path="src/Integration/Integration.Services/Integration.Services.csproj">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
     <Project Path="src/Integration/Integration.Shared/Integration.Shared.csproj" />

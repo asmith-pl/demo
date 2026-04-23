@@ -9,7 +9,7 @@ var integrationServer = builder.AddProject<Projects.Integration_Api>("integratio
 //.WithHttpsEndpoint(port: 5005, name: "https");
 
 // AdAgent microservice
-var adAgentServer = builder.AddProject<Projects.AdAgent_Server>("adagent-server");
+var adAgentServer = builder.AddProject<Projects.AdAgent_Api>("adagent-api");
 
 try
 {

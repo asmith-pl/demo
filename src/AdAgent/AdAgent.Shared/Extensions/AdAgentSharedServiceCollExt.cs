@@ -1,28 +1,28 @@
-using PeakLogix.PickPro.Common.Shared.Config;
 using Microsoft.Extensions.DependencyInjection;
+using PeakLogix.PickPro.Common.Shared.Config;
 
 namespace PeakLogix.PickPro.AdAgent.Shared.Extensions;
 
 public static partial class AdAgentSharedServiceCollExt
 {
-    // Declaration of partial method for code-generated services
-    static partial void AddGeneratedServices(IServiceCollection services);
+	// Declaration of partial method for code-generated services
+	static partial void AddGeneratedServices(IServiceCollection services);
 
-    public static IServiceCollection AddAdAgentSharedServices(this IServiceCollection services, ApiClientConfig apiClientConfig, bool inProcess)
-    {
-        if (!inProcess)
-        {
-            string? baseUrl = apiClientConfig.BaseUrl;
-            if (string.IsNullOrEmpty(apiClientConfig.BaseUrl))
-            {
-                throw new InvalidOperationException(
-                    "BaseUrl is missing from Auth configuration. It is required when InProcess is false");
-            }
+	public static IServiceCollection AddAdAgentSharedServices(this IServiceCollection services, ApiClientConfig apiClientConfig, bool inProcess)
+	{
+		if (!inProcess)
+		{
+			string? baseUrl = apiClientConfig.BaseUrl;
+			if (string.IsNullOrEmpty(apiClientConfig.BaseUrl))
+			{
+				throw new InvalidOperationException(
+					"BaseUrl is missing from Auth configuration. It is required when InProcess is false");
+			}
 
-            // Add code-generated services
-            AddGeneratedServices(services);
-        }
+			// Add code-generated services
+			AddGeneratedServices(services);
+		}
 
-        return services;
-    }
+		return services;
+	}
 }

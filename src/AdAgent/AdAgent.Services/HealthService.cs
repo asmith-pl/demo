@@ -1,10 +1,11 @@
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using PeakLogix.PickPro.AdAgent.Services.Config;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace PeakLogix.PickPro.Integration.Services.Services;
+namespace PeakLogix.PickPro.AdAgent.Services;
 
-public class HealthService : IHealthCheck
+public class HealthService(AdAgentConfig _adAgentConfig) : IHealthCheck
 {
 	public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
 	{
@@ -18,13 +19,18 @@ public class HealthService : IHealthCheck
 			["StartTimeUtc"] = Process.GetCurrentProcess().StartTime.ToUniversalTime().ToString()
 		};
 
+		healthData["AuthMode"] = _adAgentConfig?.AuthMode.ToString() ?? string.Empty;
+		healthData["DcHost"] = _adAgentConfig?.DcHost ?? string.Empty;
+		healthData["DcHost"] = _adAgentConfig?.DcHost ?? string.Empty;
+		healthData["Domain"] = _adAgentConfig?.LdapPort.ToString() ?? string.Empty;
+
 		// TODO: Add any custom health checks here and update healthStatus accordingly.
 
 		switch (healthStatus)
 		{
 			case HealthStatus.Healthy:
 				return HealthCheckResult.Healthy(data: healthData);
-			
+
 			case HealthStatus.Degraded:
 				return HealthCheckResult.Degraded(data: healthData);
 

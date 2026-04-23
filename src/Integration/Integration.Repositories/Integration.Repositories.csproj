@@ -8,4 +8,8 @@
 		<RootNamespace>PeakLogix.PickPro.Integration.Repositories</RootNamespace>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Integration.Shared\Integration.Shared.csproj" />
+	</ItemGroup>
+
 </Project>

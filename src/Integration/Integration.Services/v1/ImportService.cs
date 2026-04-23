@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
 using PeakLogix.PickPro.App.Shared.Contracts.v1;
 
-namespace PeakLogix.PickPro.Integration.Services.Services.v1;
+namespace PeakLogix.PickPro.Integration.Services.v1;
 
 public partial class ImportService : IImportService
 {

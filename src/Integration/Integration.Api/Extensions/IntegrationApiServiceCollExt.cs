@@ -1,10 +1,8 @@
 using PeakLogix.PickPro.App.Shared.Contracts.v1;
 using PeakLogix.PickPro.Common.Api.Extensions;
-using PeakLogix.PickPro.Common.Shared.Contracts;
-using PeakLogix.PickPro.Integration.Api.Endpoints;
 using PeakLogix.PickPro.Integration.Api.Endpoints.v1;
-using PeakLogix.PickPro.Integration.Services.Services;
-using PeakLogix.PickPro.Integration.Services.Services.v1;
+using PeakLogix.PickPro.Integration.Services;
+using PeakLogix.PickPro.Integration.Services.v1;
 using Scalar.AspNetCore;
 
 namespace PeakLogix.PickPro.Integration.Api.Extensions;

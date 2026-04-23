@@ -13,8 +13,4 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AdAgent.Api\AdAgent.Api.csproj" />
-  </ItemGroup>
-
 </Project>

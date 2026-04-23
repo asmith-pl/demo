@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using PeakLogix.PickPro.AdAgent.Api.Config;
 using PeakLogix.PickPro.AdAgent.Api.Endpoints.v1;
-using PeakLogix.PickPro.AdAgent.Services.Config;
-using PeakLogix.PickPro.Common.Api.Filters;
+using PeakLogix.PickPro.AdAgent.Api.Services;
 using PeakLogix.PickPro.Common.Api.Extensions;
-using Cv1 = PeakLogix.PickPro.AdAgent.Shared.Contracts.v1;
-using Sv1 = PeakLogix.PickPro.AdAgent.Services.v1;
-using PeakLogix.PickPro.AdAgent.Services;
+using PeakLogix.PickPro.Common.Api.Filters;
 using Scalar.AspNetCore;
+using Cv1 = PeakLogix.PickPro.AdAgent.Shared.Contracts.v1;
+using Sv1 = PeakLogix.PickPro.AdAgent.Api.Services.v1;
 
 namespace PeakLogix.PickPro.AdAgent.Api.Extensions;
 

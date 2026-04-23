@@ -9,9 +9,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\AdAgent\AdAgent.Server\AdAgent.Server.csproj" />
 	  <ProjectReference Include="..\..\Auth\Auth.Server\Auth.Server.csproj" />
 	  <ProjectReference Include="..\..\Integration\Integration.Api\Integration.Api.csproj" />
+	  <ProjectReference Include="..\..\AdAgent\AdAgent.Api\AdAgent.Api.csproj" />
 	</ItemGroup>
 
 </Project>
