@@ -19,11 +19,6 @@
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
   </Folder>
-  <Folder Name="/src/App/">
-    <Project Path="src/App/App.Api/App.Api.csproj" />
-    <Project Path="src/App/App.Server/App.Server.csproj" />
-    <Project Path="src/App/App.Shared/App.Shared.csproj" />
-  </Folder>
   <Folder Name="/src/Aspire/">
     <Project Path="src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
@@ -50,12 +45,5 @@
     <Project Path="src/Integration/Integration.Api/Integration.Api.csproj" />
     <Project Path="src/Integration/Integration.Server/Integration.Server.csproj" />
     <Project Path="src/Integration/Integration.Shared/Integration.Shared.csproj" />
-  </Folder>
-  <Folder Name="/src/UI/">
-    <Project Path="src/UI/Angular/Angular.esproj">
-      <Platform Project="AnyCPU" />
-      <Build />
-      <Deploy />
-    </Project>
   </Folder>
 </Solution>

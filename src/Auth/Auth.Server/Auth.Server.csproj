@@ -2,7 +2,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\AdAgent\AdAgent.Shared\AdAgent.Shared.csproj" />
-		<ProjectReference Include="..\..\App\App.Shared\App.Shared.csproj" />
 		<ProjectReference Include="..\Auth.Api\Auth.Api.csproj" />
 		<ProjectReference Include="..\Auth.Data\Auth.Data.csproj" />
 	</ItemGroup>

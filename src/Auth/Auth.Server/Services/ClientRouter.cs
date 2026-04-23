@@ -1,4 +1,5 @@
-using PeakLogix.PickPro.App.Shared.Contracts.v1;
+
+using PeakLogix.PickPro.Auth.Data.Context;
 
 namespace PeakLogix.PickPro.Auth.Server.Services
 {
@@ -9,15 +10,15 @@ namespace PeakLogix.PickPro.Auth.Server.Services
 
 	public class ClientRouter : IClientRouter
 	{
-		private readonly IClientService _clientService;
 		private readonly Dictionary<string, string> _cache;
 		private DateTime _expirationTimeUtc;
+		private readonly AuthDbContext _dbContext;
 
-		public ClientRouter(IClientService clientService)
+		public ClientRouter(AuthDbContext dbContext)
 		{
 			_cache = new Dictionary<string, string>();
 			_expirationTimeUtc = DateTime.UtcNow.AddDays(-1);
-			_clientService = clientService;
+			_dbContext = dbContext;
 		}
 
 		public async Task<HttpClient> GetHttpClient(string clientKey)
@@ -35,9 +36,14 @@ namespace PeakLogix.PickPro.Auth.Server.Services
 		{
 			_cache.Clear();
 
+			// TODO: implement this method to load client routes from the database. 
+			// We'll leave it empty for now, it won't be needed until AD auth mode is
+			// implemented and we need to route to the tenant's domain controller for authentication.
+			/*
 			var clientRouteDtos = await _clientService.GetAllClientRoutes();
 			foreach (var clientRouteDto in clientRouteDtos)
 				_cache.Add(clientRouteDto.Key, clientRouteDto.BaseUrl);
+			*/
 
 			_expirationTimeUtc = DateTime.UtcNow.AddMinutes(5);
 		}

@@ -1,7 +1,6 @@
 using PeakLogix.PickPro.AdAgent.Api.Config;
 using PeakLogix.PickPro.AdAgent.Api.Extensions;
 using PeakLogix.PickPro.Common.Api.Extensions;
-using PeakLogix.PickPro.Common.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 

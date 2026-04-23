@@ -1,5 +1,3 @@
-using PeakLogix.PickPro.App.Shared.ApiClients.v1;
-using PeakLogix.PickPro.App.Shared.Contracts.v1;
 using PeakLogix.PickPro.Auth.Api.Extensions;
 using PeakLogix.PickPro.Auth.Data;
 using PeakLogix.PickPro.Auth.Data.Context;
@@ -10,7 +8,6 @@ using PeakLogix.PickPro.Auth.Server.Services;
 using PeakLogix.PickPro.Auth.Shared.Authorization;
 using PeakLogix.PickPro.Common.Api.Authorization;
 using PeakLogix.PickPro.Common.Api.Extensions;
-using PeakLogix.PickPro.Common.Server;
 using Fido2NetLib;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -181,11 +178,6 @@ builder.Services.AddBrandImgRepository(builder.Configuration);
 builder.Services.AddStandardApiVersioning();
 
 builder.Services.AddScoped<IClientRouter, ClientRouter>();
-builder.Services.AddHttpClient<IClientService, ClientApiClient>();
-builder.Services.AddHttpClient<IClientService, ClientApiClient>(client =>
-{
-	client.BaseAddress = new Uri("https://localhost:5003");
-});
 
 builder.Services.AddSingleton<PermissionRegistry>();
 
