@@ -11,30 +11,18 @@ namespace PeakLogix.PickPro.Integration.Api.Extensions;
 
 public static partial class IntegrationApiServiceCollExt
 {
-	// Declaration of partial methods for code-generated services
-	static partial void AddGeneratedServices(IServiceCollection services);
-	static partial void MapGeneratedEndpoints(IEndpointRouteBuilder app);
-
-	/// <summary>
-	/// Registers Integration API services.
-	/// Call this when hosting Integration services (standalone or in-process).
-	/// </summary>
-	public static IServiceCollection AddIntegrationApiServices(this IServiceCollection services, bool isInProcess)
+	public static IServiceCollection AddIntegrationApiServices(this IServiceCollection services)
 	{
+		// Add system-level services
 		services.AddCurrentUserServices();
+		services.AddHealthChecks()
+			.AddCheck<HealthService>("Integration API Health");
 
 		// Register business logic services
-		services.AddScoped<ISystemService, IntegrationSystemService>();
 		services.AddScoped<IImportService, ImportService>();
 
-		// Add code-generated services
-		AddGeneratedServices(services);
-
-		if (!isInProcess)
-		{
-			// Add OpenAPI support
-			services.AddOpenApi();
-		}
+		// Add OpenAPI support
+		services.AddOpenApi();
 
 		return services;
 	}
@@ -44,9 +32,7 @@ public static partial class IntegrationApiServiceCollExt
 	/// </summary>
 	public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder app)
 	{
-		app.MapIntegrationSystemEndpoints();
 		app.MapImportEndpoints();
-		MapGeneratedEndpoints(app);
 
 		return app;
 	}

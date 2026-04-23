@@ -32,7 +32,6 @@ public static partial class AuthApiServiceCollExt
         services.AddCurrentUserServices();
 
         // Register business logic services
-        services.AddScoped<ISystemService, AuthSystemService>();
         services.AddScoped<BrandImgService>();
         services.AddScoped<IOidcAppService, OidcAppService>();
         services.AddScoped<ApiExceptionFilter<OidcAppService>>();
@@ -54,7 +53,6 @@ public static partial class AuthApiServiceCollExt
     /// </summary>
     public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder app)
     {
-        app.MapAuthSystemEndpoints();
         app.MapBrandImgEndpoints();
         app.MapOidcAppEndpoints();
 

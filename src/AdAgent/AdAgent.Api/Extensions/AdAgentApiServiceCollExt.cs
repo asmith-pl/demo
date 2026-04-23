@@ -1,21 +1,18 @@
-using PeakLogix.PickPro.AdAgent.Api.Config;
-using PeakLogix.PickPro.AdAgent.Api.Endpoints;
-using PeakLogix.PickPro.App.Api.Services;
-using PeakLogix.PickPro.Common.Api.Extensions;
-using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using PeakLogix.PickPro.AdAgent.Api.Config;
+using PeakLogix.PickPro.Common.Api.Extensions;
+using PeakLogix.PickPro.Common.Api.Filters;
 using Scalar.AspNetCore;
+using PeakLogix.PickPro.AdAgent.Api.Endpoints.v1;
+using Sv1 = PeakLogix.PickPro.AdAgent.Api.Services.v1;
+using Cv1 = PeakLogix.PickPro.AdAgent.Shared.Contracts.v1;
 
 namespace PeakLogix.PickPro.AdAgent.Api.Extensions;
 
 public static partial class AdAgentApiServiceCollExt
 {
-    // Declaration of partial methods for code-generated services
-    public static partial void AddGeneratedServices(IServiceCollection services);
-    public static partial void MapGeneratedEndpoints(IEndpointRouteBuilder app);
-
     /// <summary>
     /// Registers App API services.
     /// Call this when hosting App services (standalone or in-process).
@@ -25,12 +22,12 @@ public static partial class AdAgentApiServiceCollExt
         services.AddCurrentUserServices();
 
         // Register business logic services
-        services.AddScoped<ISystemService, AdAgentSystemService>();
         services.AddScoped<IConfigRepository, ConfigRepository>();
         services.AddSingleton(adAgentConfig);
 
         // Add code-generated services
-        AddGeneratedServices(services);
+		services.AddScoped<Cv1.IAdService, Sv1.AdService>();
+		services.AddScoped<ApiExceptionFilter<Sv1.AdService>>();
 
         // Add OpenAPI support
         services.AddOpenApi();
@@ -43,10 +40,7 @@ public static partial class AdAgentApiServiceCollExt
     /// </summary>
     public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder app)
     {
-        app.MapAdAgentSystemEndpoints();
-
-        MapGeneratedEndpoints(app);
-
+		app.MapAdEndpoints();
         return app;
     }
 

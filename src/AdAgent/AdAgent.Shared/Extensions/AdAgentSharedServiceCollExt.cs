@@ -1,6 +1,4 @@
-using PeakLogix.PickPro.AdAgent.Shared.ApiClients;
 using PeakLogix.PickPro.Common.Shared.Config;
-using PeakLogix.PickPro.Common.Shared.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace PeakLogix.PickPro.AdAgent.Shared.Extensions;
@@ -20,11 +18,6 @@ public static partial class AdAgentSharedServiceCollExt
                 throw new InvalidOperationException(
                     "BaseUrl is missing from Auth configuration. It is required when InProcess is false");
             }
-
-            services.AddHttpClient<ISystemService, AdAgentSystemApiClient>(client =>
-            {
-                client.BaseAddress = new Uri(baseUrl);
-            });
 
             // Add code-generated services
             AddGeneratedServices(services);

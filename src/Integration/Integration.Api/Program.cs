@@ -5,8 +5,9 @@ using PeakLogix.PickPro.Integration.Shared.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add service defaults (telemetry, health checks, resilience)
+// Add service defaults (telemetry, health check (ping), resilience)
 builder.AddServiceDefaults();
+
 
 // Add services to the container
 if (builder.Environment.IsEnvironment("Testing"))
@@ -15,7 +16,7 @@ else
 	builder.Services.AddJwtBearerAuthentication(builder.Configuration);
 
 builder.Services.AddPermissionAuthorization();
-builder.Services.AddIntegrationApiServices(false);
+builder.Services.AddIntegrationApiServices();
 builder.Services.AddStandardApiVersioning();
 
 //----------------------------------------------------------------------------------------------
