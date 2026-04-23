@@ -69,5 +69,8 @@
     <Project Path="src/RelayAgent/RelayAgent.Shared/RelayAgent.Shared.csproj">
       <BuildType Solution="Dbg-Ext|*" Project="Release" />
     </Project>
+    <Project Path="src/RelayAgent/RelayAgent.UnitTests/RelayAgent.UnitTests.csproj">
+      <BuildType Solution="Dbg-Ext|*" Project="Release" />
+    </Project>
   </Folder>
 </Solution>
